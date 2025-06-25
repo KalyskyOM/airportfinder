@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Airport Finder"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Latitude Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latitude"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/etLatDegrees"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Deg"
+                android:inputType="number"
+                android:background="@android:color/white"
+                android:padding="12dp"
+                android:layout_marginEnd="4dp" />
+
+            <EditText
+                android:id="@+id/etLatMinutes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Min"
+                android:inputType="number"
+                android:background="@android:color/white"
+                android:padding="12dp"
+                android:layout_marginEnd="4dp" />
+
+            <EditText
+                android:id="@+id/etLatSecondsWhole"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Sec"
+                android:inputType="number"
+                android:background="@android:color/white"
+                android:padding="12dp"
+                android:layout_marginEnd="4dp" />
+
+            <EditText
+                android:id="@+id/etLatSecondsDecimal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Dec"
+                android:inputType="number"
+                android:background="@android:color/white"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rgLatDirection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbLatNorth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N (North)"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbLatSouth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S (South)"
+                android:layout_marginStart="16dp" />
+
+        </RadioGroup>
+
+        <!-- Longitude Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longitude"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/etLonDegrees"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Deg"
+                android:inputType="number"
+                android:background="@android:color/white"
+                android:padding="12dp"
+                android:layout_marginEnd="4dp" />
+
+            <EditText
+                android:id="@+id/etLonMinutes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Min"
+                android:inputType="number"
+                android:background="@android:color/white"
+                android:padding="12dp"
+                android:layout_marginEnd="4dp" />
+
+            <EditText
+                android:id="@+id/etLonSecondsWhole"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Sec"
+                android:inputType="number"
+                android:background="@android:color/white"
+                android:padding="12dp"
+                android:layout_marginEnd="4dp" />
+
+            <EditText
+                android:id="@+id/etLonSecondsDecimal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Dec"
+                android:inputType="number"
+                android:background="@android:color/white"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rgLonDirection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/rbLonEast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E (East)"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbLonWest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="W (West)"
+                android:layout_marginStart="16dp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnFindAirport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find Nearest Airports"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Results will appear here..."
+            android:textSize="14sp"
+            android:background="#f5f5f5"
+            android:padding="12dp"
+            android:fontFamily="monospace" />
+
+    </LinearLayout>
+</ScrollView>
