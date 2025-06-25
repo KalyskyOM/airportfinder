@@ -2935,6 +2935,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable app_logo
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -3224,6 +3225,8 @@ id etLonDegrees
 id etLonMinutes
 id etLonSecondsDecimal
 id etLonSecondsWhole
+id etRadiusDecimal
+id etRadiusWhole
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3456,6 +3459,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinnerCoordinateFormat
 id spline
 id split_action_bar
 id spread
@@ -3523,6 +3527,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvFormatDescription
 id tvResult
 id unchecked
 id uniform

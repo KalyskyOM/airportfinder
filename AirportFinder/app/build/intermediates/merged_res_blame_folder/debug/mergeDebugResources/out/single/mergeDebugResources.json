@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.example.airportfinder.app-debug-31:/drawable_app_logo.png.flat",
+        "source": "com.example.airportfinder.app-main-33:/drawable/app_logo.png"
+    },
+    {
         "merged": "com.example.airportfinder.app-debug-31:/layout_activity_main.xml.flat",
         "source": "com.example.airportfinder.app-main-33:/layout/activity_main.xml"
     }

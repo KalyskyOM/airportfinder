@@ -9,6 +9,16 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- App Logo -->
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/app_logo"
+            android:contentDescription="Airport Finder Logo"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerInside" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -17,6 +27,33 @@
             android:textStyle="bold"
             android:gravity="center"
             android:layout_marginBottom="24dp" />
+
+        <!-- Coordinate Format Selection -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coordinate Format"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerCoordinateFormat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Format Description -->
+        <TextView
+            android:id="@+id/tvFormatDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Degrees Minutes Seconds.Decimal (40°45'30.25&quot;N)"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="16dp"
+            android:textColor="#666666" />
 
         <!-- Latitude Input -->
         <TextView
@@ -36,9 +73,10 @@
                 android:id="@+id/etLatDegrees"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="1.2"
                 android:hint="Deg"
-                android:inputType="number"
+                android:inputType="numberDecimal|numberSigned"
+                android:maxLength="6"
                 android:background="@android:color/white"
                 android:padding="12dp"
                 android:layout_marginEnd="4dp" />
@@ -49,7 +87,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Min"
-                android:inputType="number"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
                 android:background="@android:color/white"
                 android:padding="12dp"
                 android:layout_marginEnd="4dp" />
@@ -60,7 +99,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Sec"
-                android:inputType="number"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
                 android:background="@android:color/white"
                 android:padding="12dp"
                 android:layout_marginEnd="4dp" />
@@ -69,9 +109,10 @@
                 android:id="@+id/etLatSecondsDecimal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="0.8"
                 android:hint="Dec"
-                android:inputType="number"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
                 android:background="@android:color/white"
                 android:padding="12dp" />
 
@@ -118,9 +159,10 @@
                 android:id="@+id/etLonDegrees"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="1.4"
                 android:hint="Deg"
-                android:inputType="number"
+                android:inputType="numberDecimal|numberSigned"
+                android:maxLength="8"
                 android:background="@android:color/white"
                 android:padding="12dp"
                 android:layout_marginEnd="4dp" />
@@ -131,7 +173,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Min"
-                android:inputType="number"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
                 android:background="@android:color/white"
                 android:padding="12dp"
                 android:layout_marginEnd="4dp" />
@@ -142,7 +185,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Sec"
-                android:inputType="number"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
                 android:background="@android:color/white"
                 android:padding="12dp"
                 android:layout_marginEnd="4dp" />
@@ -151,9 +195,10 @@
                 android:id="@+id/etLonSecondsDecimal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="0.8"
                 android:hint="Dec"
-                android:inputType="number"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
                 android:background="@android:color/white"
                 android:padding="12dp" />
 
@@ -181,6 +226,45 @@
                 android:layout_marginStart="16dp" />
 
         </RadioGroup>
+
+        <!-- Search Radius Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Radius (seconds)"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <EditText
+                android:id="@+id/etRadiusWhole"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Whole"
+                android:inputType="number"
+                android:maxLength="2"
+                android:background="@android:color/white"
+                android:padding="12dp"
+                android:layout_marginEnd="4dp" />
+
+            <EditText
+                android:id="@+id/etRadiusDecimal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:hint="Dec"
+                android:inputType="number"
+                android:maxLength="2"
+                android:background="@android:color/white"
+                android:padding="12dp" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/btnFindAirport"
