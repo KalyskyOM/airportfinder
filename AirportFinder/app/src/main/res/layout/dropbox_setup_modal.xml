@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dropbox Integration"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#003366"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_dropbox"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect your Dropbox account to save airport reports directly to your cloud storage."
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etDropboxToken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dropbox Access Token"
+            android:inputType="textNoSuggestions"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To get your access token, visit the Dropbox Developer Console and create an app."
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancelDropbox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#CCCCCC"
+                android:textColor="#333333" />
+
+            <Button
+                android:id="@+id/btnConnectDropbox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Connect"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#003366"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

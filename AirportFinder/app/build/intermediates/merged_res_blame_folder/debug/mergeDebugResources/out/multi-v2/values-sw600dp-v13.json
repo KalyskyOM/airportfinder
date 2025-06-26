@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.airportfinder.app-mergeDebugResources-29:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.example.airportfinder.app-mergeDebugResources-28:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "/home/kalisky/.gradle/caches/8.10/transforms/c8b4243b04b14d239916830fb54d7271/transformed/appcompat-1.6.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/kalisky/.gradle/caches/8.10/transforms/ed73f0ae00989d1ac2dcd7fbb71eacfc/transformed/material-1.10.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/kalisky/.gradle/caches/8.10/transforms/f6edc4311231b4e53ff49468ac7ae418/transformed/material-1.9.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",

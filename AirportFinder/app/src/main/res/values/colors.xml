@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#003366</color>
+    <color name="colorPrimaryDark">#002244</color>
+    <color name="colorAccent">#0061FF</color>
+    
+    <!-- Aviation-themed colors -->
+    <color name="aviationBlue">#003366</color>
+    <color name="aviationLightBlue">#4D88C4</color>
+    <color name="aviationBackground">#F0F8FF</color>
+    <color name="aviationHighlight">#FFD700</color>
+    
+    <!-- Text colors -->
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <color name="textLight">#FFFFFF</color>
+    
+    <!-- UI element colors -->
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="bubbleBackground">#E6F2FF</color>
+    <color name="dividerColor">#DDDDDD</color>
+    <color name="warningColor">#FF6600</color>
+    <color name="successColor">#4CAF50</color>
+    
+    <!-- Standard colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#888888</color>
+    <color name="lightGray">#CCCCCC</color>
+</resources>

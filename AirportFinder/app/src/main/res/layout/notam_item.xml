@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="#F0F8FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvNotamId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A1234/23"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#003366"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvNotamType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RUNWAY"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:background="#FF6600"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvNotamText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RWY 13L/31R CLSD"
+            android:textSize="14sp"
+            android:textColor="#003366"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvNotamValidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="From: 2025-06-25 08:00 To: 2025-06-27 18:00"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="4dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

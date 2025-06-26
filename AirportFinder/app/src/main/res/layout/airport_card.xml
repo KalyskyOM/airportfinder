@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#E6F0FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Airport Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvAirportIcao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KJFK"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#003366"
+                android:background="#CCE5FF"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/tvAirportName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="John F. Kennedy International Airport"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#003366"/>
+
+            <TextView
+                android:id="@+id/tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12.5 NM"
+                android:textSize="14sp"
+                android:textColor="#003366"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#99CCFF"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Airport Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAirportType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type: Large Airport"
+                android:textSize="14sp"
+                android:textColor="#003366"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvAirportLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location: 40.6413° N, 73.7781° W"
+                android:textSize="14sp"
+                android:textColor="#003366"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvAirportElevation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevation: 13 ft"
+                android:textSize="14sp"
+                android:textColor="#003366"
+                android:layout_marginBottom="4dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#99CCFF"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Weather and NOTAM Section -->
+        <LinearLayout
+            android:id="@+id/weather_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <!-- METAR Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="METAR"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#003366"
+                android:background="#CCE5FF"
+                android:padding="8dp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_metar_raw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading METAR..."
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:padding="8dp"
+                android:background="#F0F8FF"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_metar_decoded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp"
+                android:padding="8dp"
+                android:background="#F8F8F8"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_refresh_metar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refresh METAR"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#003366"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- TAF Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TAF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#003366"
+                android:background="#CCE5FF"
+                android:padding="8dp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_taf_raw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading TAF..."
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:padding="8dp"
+                android:background="#F0F8FF"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_taf_decoded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp"
+                android:padding="8dp"
+                android:background="#F8F8F8"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_refresh_taf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refresh TAF"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#003366"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- NOTAMs Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOTAMs"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#003366"
+                android:background="#CCE5FF"
+                android:padding="8dp"
+                android:layout_marginBottom="4dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/notam_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/empty_notam_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No NOTAMs available"
+                android:textSize="12sp"
+                android:padding="16dp"
+                android:gravity="center"
+                android:textColor="#666666"
+                android:background="#F8F8F8"
+                android:layout_marginBottom="8dp"
+                android:visibility="visible"/>
+
+            <Button
+                android:id="@+id/btn_refresh_notam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refresh NOTAMs"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#003366"
+                android:layout_marginBottom="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnGeneratePdf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Generate PDF"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#003366"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnSaveToDropbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save to Dropbox"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#003366"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

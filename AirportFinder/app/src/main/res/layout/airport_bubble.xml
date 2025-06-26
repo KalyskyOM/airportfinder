@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/airport_bubble_background"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:id="@+id/tvIcaoCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KJFK"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvAirportName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John F. Kennedy Intl"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/btnRemove"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_close"
+        android:clickable="true"
+        android:focusable="true" />
+</LinearLayout>
