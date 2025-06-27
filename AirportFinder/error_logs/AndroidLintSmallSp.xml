@@ -1,0 +1,15 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml</file>
+  <line>612</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+  <problem_class id="AndroidLintSmallSp" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Text size is too small</problem_class>
+  <hints />
+  <description>&lt;html&gt;Avoid using sizes smaller than &lt;code&gt;11sp&lt;/code&gt;: &lt;code&gt;10sp&lt;/code&gt;&lt;/html&gt;</description>
+  <highlighted_element>android:textSize=&quot;10sp&quot;</highlighted_element>
+  <language>XML</language>
+  <offset>16</offset>
+  <length>23</length>
+</problem>
+</problems>

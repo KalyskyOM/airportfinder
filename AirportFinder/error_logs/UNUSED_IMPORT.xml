@@ -1,0 +1,296 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/ApiKeyManager.java</file>
+  <line>4</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/ApiKeyManager.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import android.os.Build;&lt;/code&gt; #loc</description>
+  <highlighted_element>import android.os.Build;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/ApiKeyManager.java</file>
+  <line>5</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/ApiKeyManager.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import android.security.keystore.KeyGenParameterSpec;&lt;/code&gt; #loc</description>
+  <highlighted_element>import android.security.keystore.KeyGenParameterSpec;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>53</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/ApiKeyManager.java</file>
+  <line>6</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/ApiKeyManager.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import android.security.keystore.KeyProperties;&lt;/code&gt; #loc</description>
+  <highlighted_element>import android.security.keystore.KeyProperties;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>47</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/ApiKeyManager.java</file>
+  <line>9</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/ApiKeyManager.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import androidx.annotation.RequiresApi;&lt;/code&gt; #loc</description>
+  <highlighted_element>import androidx.annotation.RequiresApi;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>39</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AvwxApiService.java</file>
+  <line>20</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AvwxApiService.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import java.util.ArrayList;&lt;/code&gt; #loc</description>
+  <highlighted_element>import java.util.ArrayList;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AvwxApiService.java</file>
+  <line>23</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AvwxApiService.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import java.util.List;&lt;/code&gt; #loc</description>
+  <highlighted_element>import java.util.List;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/DropboxUploader.java</file>
+  <line>6</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/DropboxUploader.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import android.widget.Toast;&lt;/code&gt; #loc</description>
+  <highlighted_element>import android.widget.Toast;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>4</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import android.animation.Animator;&lt;/code&gt; #loc</description>
+  <highlighted_element>import android.animation.Animator;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>34</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>5</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import android.animation.AnimatorListenerAdapter;&lt;/code&gt; #loc</description>
+  <highlighted_element>import android.animation.AnimatorListenerAdapter;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>49</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>8</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import android.app.ProgressDialog;&lt;/code&gt; #loc</description>
+  <highlighted_element>import android.app.ProgressDialog;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>34</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>9</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import android.content.ActivityNotFoundException;&lt;/code&gt; #loc</description>
+  <highlighted_element>import android.content.ActivityNotFoundException;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>49</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>12</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import android.content.Intent;&lt;/code&gt; #loc</description>
+  <highlighted_element>import android.content.Intent;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>20</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import android.net.Uri;&lt;/code&gt; #loc</description>
+  <highlighted_element>import android.net.Uri;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>23</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import android.os.Handler;&lt;/code&gt; #loc</description>
+  <highlighted_element>import android.os.Handler;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>24</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import android.os.Looper;&lt;/code&gt; #loc</description>
+  <highlighted_element>import android.os.Looper;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>32</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import android.view.MenuInflater;&lt;/code&gt; #loc</description>
+  <highlighted_element>import android.view.MenuInflater;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>43</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import android.widget.RadioButton;&lt;/code&gt; #loc</description>
+  <highlighted_element>import android.widget.RadioButton;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>34</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>54</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import androidx.core.content.FileProvider;&lt;/code&gt; #loc</description>
+  <highlighted_element>import androidx.core.content.FileProvider;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>42</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>59</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import java.io.File;&lt;/code&gt; #loc</description>
+  <highlighted_element>import java.io.File;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>60</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import java.io.FileReader;&lt;/code&gt; #loc</description>
+  <highlighted_element>import java.io.FileReader;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>71</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="UNUSED_IMPORT" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unused import</problem_class>
+  <hints />
+  <description>Unused import &lt;code&gt;import java.util.Random;&lt;/code&gt; #loc</description>
+  <highlighted_element>import java.util.Random;</highlighted_element>
+  <language>JAVA</language>
+  <offset>0</offset>
+  <length>24</length>
+</problem>
+</problems>

@@ -1,0 +1,145 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AutorouterApiService.java</file>
+  <line>141</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.AutorouterApiService.FetchNotamTask java.util.List&lt;com.example.airportfinder.NotamData&gt; doInBackground(java.lang.String... params)" />
+  <problem_class id="ConstantValue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Constant values</problem_class>
+  <description>Condition &lt;code&gt;notamList != null&lt;/code&gt; is always &lt;code&gt;true&lt;/code&gt;</description>
+  <highlighted_element>notamList != null</highlighted_element>
+  <language>JAVA</language>
+  <offset>24</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AvwxApiService.java</file>
+  <line>188</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.AvwxApiService.FetchWeatherTask com.example.airportfinder.WeatherData doInBackground(java.lang.String... params)" />
+  <problem_class id="ConstantValue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Constant values</problem_class>
+  <description>Condition &lt;code&gt;result != null&lt;/code&gt; is always &lt;code&gt;true&lt;/code&gt;</description>
+  <highlighted_element>result != null</highlighted_element>
+  <language>JAVA</language>
+  <offset>24</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AvwxApiService.java</file>
+  <line>313</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.AvwxApiService.FetchWeatherTask com.example.airportfinder.WeatherData parseWeatherResponse(java.lang.String jsonResponse, boolean isMetar)" />
+  <problem_class id="ConstantValue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Constant values</problem_class>
+  <description>Condition &lt;code&gt;timestamp != null&lt;/code&gt; is always &lt;code&gt;true&lt;/code&gt;</description>
+  <highlighted_element>timestamp != null</highlighted_element>
+  <language>JAVA</language>
+  <offset>20</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1159</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity.LoadAirportDataTask java.lang.Integer doInBackground(java.lang.Void... params)" />
+  <problem_class id="ConstantValue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Constant values</problem_class>
+  <description>Condition &lt;code&gt;parts.length &gt; 2&lt;/code&gt; is always &lt;code&gt;true&lt;/code&gt;</description>
+  <highlighted_element>parts.length &gt; 2</highlighted_element>
+  <language>JAVA</language>
+  <offset>38</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1163</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity.LoadAirportDataTask java.lang.Integer doInBackground(java.lang.Void... params)" />
+  <problem_class id="ConstantValue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Constant values</problem_class>
+  <description>Condition &lt;code&gt;parts.length &gt; 3&lt;/code&gt; is always &lt;code&gt;true&lt;/code&gt;</description>
+  <highlighted_element>parts.length &gt; 3</highlighted_element>
+  <language>JAVA</language>
+  <offset>42</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1164</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity.LoadAirportDataTask java.lang.Integer doInBackground(java.lang.Void... params)" />
+  <problem_class id="ConstantValue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Constant values</problem_class>
+  <description>Condition &lt;code&gt;parts.length &gt; 13&lt;/code&gt; is always &lt;code&gt;true&lt;/code&gt;</description>
+  <highlighted_element>parts.length &gt; 13</highlighted_element>
+  <language>JAVA</language>
+  <offset>46</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1165</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity.LoadAirportDataTask java.lang.Integer doInBackground(java.lang.Void... params)" />
+  <problem_class id="ConstantValue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Constant values</problem_class>
+  <description>Condition &lt;code&gt;parts.length &gt; 12&lt;/code&gt; is always &lt;code&gt;true&lt;/code&gt;</description>
+  <highlighted_element>parts.length &gt; 12</highlighted_element>
+  <language>JAVA</language>
+  <offset>46</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1166</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity.LoadAirportDataTask java.lang.Integer doInBackground(java.lang.Void... params)" />
+  <problem_class id="ConstantValue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Constant values</problem_class>
+  <description>Condition &lt;code&gt;parts.length &gt; 10&lt;/code&gt; is always &lt;code&gt;true&lt;/code&gt;</description>
+  <highlighted_element>parts.length &gt; 10</highlighted_element>
+  <language>JAVA</language>
+  <offset>50</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1167</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity.LoadAirportDataTask java.lang.Integer doInBackground(java.lang.Void... params)" />
+  <problem_class id="ConstantValue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Constant values</problem_class>
+  <description>Condition &lt;code&gt;parts.length &gt; 8&lt;/code&gt; is always &lt;code&gt;true&lt;/code&gt;</description>
+  <highlighted_element>parts.length &gt; 8</highlighted_element>
+  <language>JAVA</language>
+  <offset>45</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1169</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity.LoadAirportDataTask java.lang.Integer doInBackground(java.lang.Void... params)" />
+  <problem_class id="ConstantValue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Constant values</problem_class>
+  <description>Condition &lt;code&gt;parts.length &gt; 5&lt;/code&gt; is always &lt;code&gt;true&lt;/code&gt;</description>
+  <highlighted_element>parts.length &gt; 5</highlighted_element>
+  <language>JAVA</language>
+  <offset>32</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/WeatherPdfGenerator.java</file>
+  <line>109</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.WeatherPdfGenerator java.io.File generateWeatherReport(android.content.Context context, java.lang.String icaoCode, com.example.airportfinder.WeatherData metar, com.example.airportfinder.WeatherData taf, java.util.List&lt;com.example.airportfinder.NotamData&gt; notams)" />
+  <problem_class id="ConstantValue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Constant values</problem_class>
+  <description>Condition &lt;code&gt;metarSummary != null&lt;/code&gt; is always &lt;code&gt;true&lt;/code&gt;</description>
+  <highlighted_element>metarSummary != null</highlighted_element>
+  <language>JAVA</language>
+  <offset>16</offset>
+  <length>20</length>
+</problem>
+</problems>

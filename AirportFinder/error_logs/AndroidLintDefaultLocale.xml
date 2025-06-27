@@ -1,0 +1,16 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>2248</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="AndroidLintDefaultLocale" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Implied default locale in case conversion</problem_class>
+  <hints />
+  <description>&lt;html&gt;Implicitly using the default locale is a common source of bugs: Use &lt;code&gt;String.format(Locale, ...)&lt;/code&gt; instead&lt;/html&gt;</description>
+  <highlighted_element>String.format(&quot;%02d°%02d'%05.2f\&quot;%s %03d°%02d'%05.2f\&quot;%s&quot;, latDegrees, latMinutesWho...</highlighted_element>
+  <language>JAVA</language>
+  <offset>15</offset>
+  <length>223</length>
+</problem>
+</problems>

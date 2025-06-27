@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/action_api_settings"
-        android:title="API Settings"
+        android:title="@string/menu_api_settings"
         android:icon="@android:drawable/ic_menu_manage"
         app:showAsAction="never" />
 </menu>

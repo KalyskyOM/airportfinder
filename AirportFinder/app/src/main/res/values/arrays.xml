@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="format_options">
+        <item>Degrees, Minutes, Seconds (DMS)</item>
+        <item>Decimal Degrees (DD)</item>
+        <item>Degrees, Decimal Minutes (DDM)</item>
+    </string-array>
+</resources>

@@ -1,0 +1,41 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1311</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity void loadSampleNotamData(java.lang.String icaoCode, androidx.recyclerview.widget.RecyclerView recyclerView, android.widget.TextView emptyText)" />
+  <problem_class id="ExtractMethodRecommender" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Method can be extracted</problem_class>
+  <description>It's possible to extract method returning 'sampleNotams' from a long surrounding method</description>
+  <highlighted_element>// Create sample NOTAM data</highlighted_element>
+  <language>JAVA</language>
+  <offset>8</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/OfflineWeatherManager.java</file>
+  <line>184</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.OfflineWeatherManager boolean saveNotamsOffline(java.lang.String icaoCode, java.util.List&lt;com.example.airportfinder.NotamData&gt; notamList)" />
+  <problem_class id="ExtractMethodRecommender" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Method can be extracted</problem_class>
+  <description>It's possible to extract method returning 'jsonArray' from a long surrounding method</description>
+  <highlighted_element>JSONArray jsonArray = new JSONArray();</highlighted_element>
+  <language>JAVA</language>
+  <offset>12</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/WeatherFormatter.java</file>
+  <line>168</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.WeatherFormatter java.lang.String extractMetarSummary(com.example.airportfinder.WeatherData metar)" />
+  <problem_class id="ExtractMethodRecommender" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Method can be extracted</problem_class>
+  <description>It's possible to extract method returning 'foundWeather' from a long surrounding method</description>
+  <highlighted_element>java.util.regex.Matcher altMatcher = altPattern.matcher(rawText);</highlighted_element>
+  <language>JAVA</language>
+  <offset>8</offset>
+  <length>65</length>
+</problem>
+</problems>

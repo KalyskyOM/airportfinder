@@ -1,0 +1,15 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml</file>
+  <line>1</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+  <problem_class id="AndroidLintRtlEnabled" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Using RTL attributes without enabling RTL support</problem_class>
+  <hints />
+  <description>&lt;html&gt;The project references RTL attributes, but does not explicitly enable or disable RTL support with &lt;code&gt;android:supportsRtl&lt;/code&gt; in the manifest&lt;/html&gt;</description>
+  <highlighted_element>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;manifest xmlns:android=&quot;http://schemas.android.com/apk/res/a...</highlighted_element>
+  <language>XML</language>
+  <offset>0</offset>
+  <length>1555</length>
+</problem>
+</problems>

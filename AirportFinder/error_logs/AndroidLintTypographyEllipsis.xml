@@ -1,0 +1,54 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/values/strings.xml</file>
+  <line>91</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+  <problem_class id="AndroidLintTypographyEllipsis" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Ellipsis string can be replaced with ellipsis character</problem_class>
+  <hints />
+  <description>&lt;html&gt;Replace &quot;...&quot; with ellipsis character (…, &amp;amp;#8230;) ?&lt;/html&gt;</description>
+  <highlighted_element>Enter coordinates or ICAO code and tap search to find nearby airports...</highlighted_element>
+  <language>XML</language>
+  <offset>42</offset>
+  <length>72</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/values/strings.xml</file>
+  <line>102</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+  <problem_class id="AndroidLintTypographyEllipsis" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Ellipsis string can be replaced with ellipsis character</problem_class>
+  <hints />
+  <description>&lt;html&gt;Replace &quot;...&quot; with ellipsis character (…, &amp;amp;#8230;) ?&lt;/html&gt;</description>
+  <highlighted_element>Loading TAF...</highlighted_element>
+  <language>XML</language>
+  <offset>31</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/values/strings.xml</file>
+  <line>111</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+  <problem_class id="AndroidLintTypographyEllipsis" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Ellipsis string can be replaced with ellipsis character</problem_class>
+  <hints />
+  <description>&lt;html&gt;Replace &quot;...&quot; with ellipsis character (…, &amp;amp;#8230;) ?&lt;/html&gt;</description>
+  <highlighted_element>Loading airports... %1$d</highlighted_element>
+  <language>XML</language>
+  <offset>45</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/values/strings.xml</file>
+  <line>205</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+  <problem_class id="AndroidLintTypographyEllipsis" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Ellipsis string can be replaced with ellipsis character</problem_class>
+  <hints />
+  <description>&lt;html&gt;Replace &quot;...&quot; with ellipsis character (…, &amp;amp;#8230;) ?&lt;/html&gt;</description>
+  <highlighted_element>Loading METAR...</highlighted_element>
+  <language>XML</language>
+  <offset>33</offset>
+  <length>16</length>
+</problem>
+</problems>

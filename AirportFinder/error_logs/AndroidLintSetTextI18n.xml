@@ -1,0 +1,100 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1000</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="AndroidLintSetTextI18n" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">TextView Internationalization</problem_class>
+  <hints />
+  <description>&lt;html&gt;String literal in &lt;code&gt;setText&lt;/code&gt; can not be translated. Use Android resources instead.&lt;/html&gt;</description>
+  <highlighted_element>&quot;No NOTAMs available&quot;</highlighted_element>
+  <language>JAVA</language>
+  <offset>31</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1127</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="AndroidLintSetTextI18n" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">TextView Internationalization</problem_class>
+  <hints />
+  <description>&lt;html&gt;String literal in &lt;code&gt;setText&lt;/code&gt; can not be translated. Use Android resources instead.&lt;/html&gt;</description>
+  <highlighted_element>&quot;Loading airport database...&quot;</highlighted_element>
+  <language>JAVA</language>
+  <offset>29</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1218</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="AndroidLintSetTextI18n" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">TextView Internationalization</problem_class>
+  <hints />
+  <description>&lt;html&gt;String literal in &lt;code&gt;setText&lt;/code&gt; can not be translated. Use Android resources instead.&lt;/html&gt;</description>
+  <highlighted_element>&quot;Error loading airport database. Please restart the app.&quot;</highlighted_element>
+  <language>JAVA</language>
+  <offset>33</offset>
+  <length>57</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1792</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="AndroidLintSetTextI18n" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">TextView Internationalization</problem_class>
+  <hints />
+  <description>&lt;html&gt;String literal in &lt;code&gt;setText&lt;/code&gt; can not be translated. Use Android resources instead.&lt;/html&gt;</description>
+  <highlighted_element>&quot;AVWX API Key (for Weather Data):&quot;</highlighted_element>
+  <language>JAVA</language>
+  <offset>30</offset>
+  <length>34</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1797</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="AndroidLintSetTextI18n" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">TextView Internationalization</problem_class>
+  <hints />
+  <description>&lt;html&gt;String literal in &lt;code&gt;setText&lt;/code&gt; can not be translated. Use Android resources instead.&lt;/html&gt;</description>
+  <highlighted_element>&quot;Get free key from: https://avwx.rest&quot;</highlighted_element>
+  <language>JAVA</language>
+  <offset>29</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1816</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="AndroidLintSetTextI18n" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">TextView Internationalization</problem_class>
+  <hints />
+  <description>&lt;html&gt;String literal in &lt;code&gt;setText&lt;/code&gt; can not be translated. Use Android resources instead.&lt;/html&gt;</description>
+  <highlighted_element>&quot;Autorouter API Key (for NOTAM Data):&quot;</highlighted_element>
+  <language>JAVA</language>
+  <offset>36</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1821</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="AndroidLintSetTextI18n" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">TextView Internationalization</problem_class>
+  <hints />
+  <description>&lt;html&gt;String literal in &lt;code&gt;setText&lt;/code&gt; can not be translated. Use Android resources instead.&lt;/html&gt;</description>
+  <highlighted_element>&quot;Get key from: https://www.autorouter.aero&quot;</highlighted_element>
+  <language>JAVA</language>
+  <offset>35</offset>
+  <length>43</length>
+</problem>
+</problems>

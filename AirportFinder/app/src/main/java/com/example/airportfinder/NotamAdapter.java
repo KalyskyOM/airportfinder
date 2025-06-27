@@ -46,10 +46,10 @@ public class NotamAdapter extends RecyclerView.Adapter<NotamAdapter.NotamViewHol
     }
     
     static class NotamViewHolder extends RecyclerView.ViewHolder {
-        private TextView tvNotamId;
-        private TextView tvNotamType;
-        private TextView tvNotamText;
-        private TextView tvNotamValidity;
+        private final TextView tvNotamId;
+        private final TextView tvNotamType;
+        private final TextView tvNotamText;
+        private final TextView tvNotamValidity;
         
         public NotamViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -60,10 +60,17 @@ public class NotamAdapter extends RecyclerView.Adapter<NotamAdapter.NotamViewHol
         }
         
         public void bind(NotamData notam) {
-            tvNotamId.setText(notam.getId());
-            tvNotamType.setText(notam.getType());
-            tvNotamText.setText(notam.getText());
-            tvNotamValidity.setText(notam.getFormattedValidity());
+            if (notam != null) {
+                tvNotamId.setText(notam.getId() != null ? notam.getId() : itemView.getContext().getString(R.string.notam_not_available));
+                tvNotamType.setText(notam.getType() != null ? notam.getType() : itemView.getContext().getString(R.string.notam_type_unknown));
+                tvNotamText.setText(notam.getText() != null ? notam.getText() : itemView.getContext().getString(R.string.notam_no_details));
+                tvNotamValidity.setText(notam.getFormattedValidity() != null ? notam.getFormattedValidity() : itemView.getContext().getString(R.string.notam_validity_unknown));
+            } else {
+                tvNotamId.setText(itemView.getContext().getString(R.string.notam_not_available));
+                tvNotamType.setText(itemView.getContext().getString(R.string.notam_type_unknown));
+                tvNotamText.setText(itemView.getContext().getString(R.string.notam_no_details));
+                tvNotamValidity.setText(itemView.getContext().getString(R.string.notam_validity_unknown));
+            }
         }
     }
 }

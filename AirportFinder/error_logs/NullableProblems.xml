@@ -1,0 +1,41 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1976</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity$17 void onLocationChanged(android.location.Location location)" />
+  <problem_class id="NullableProblems" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">@NotNull/@Nullable problems</problem_class>
+  <description>Not annotated parameter overrides @NonNull parameter</description>
+  <highlighted_element>location</highlighted_element>
+  <language>JAVA</language>
+  <offset>59</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1992</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity$17 void onProviderEnabled(java.lang.String provider)" />
+  <problem_class id="NullableProblems" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">@NotNull/@Nullable problems</problem_class>
+  <description>Not annotated parameter overrides @NonNull parameter</description>
+  <highlighted_element>provider</highlighted_element>
+  <language>JAVA</language>
+  <offset>57</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1995</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity$17 void onProviderDisabled(java.lang.String provider)" />
+  <problem_class id="NullableProblems" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">@NotNull/@Nullable problems</problem_class>
+  <description>Not annotated parameter overrides @NonNull parameter</description>
+  <highlighted_element>provider</highlighted_element>
+  <language>JAVA</language>
+  <offset>58</offset>
+  <length>8</length>
+</problem>
+</problems>

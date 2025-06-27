@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dropbox Integration"
+            android:text="@string/dropbox_integration"
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#003366"
@@ -28,12 +28,13 @@
             android:layout_height="80dp"
             android:src="@drawable/ic_dropbox"
             android:layout_gravity="center"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/dropbox_logo_description" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Connect your Dropbox account to save airport reports directly to your cloud storage."
+            android:text="@string/dropbox_description"
             android:textSize="16sp"
             android:textColor="#333333"
             android:gravity="center"
@@ -43,16 +44,17 @@
             android:id="@+id/etDropboxToken"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Dropbox Access Token"
+            android:hint="@string/dropbox_access_token_hint"
             android:inputType="textNoSuggestions"
             android:layout_marginBottom="16dp"
             android:padding="12dp"
-            android:background="@drawable/edit_text_background" />
+            android:background="@drawable/edit_text_background"
+            android:autofillHints="password" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="To get your access token, visit the Dropbox Developer Console and create an app."
+            android:text="@string/dropbox_token_instructions"
             android:textSize="12sp"
             android:textColor="#666666"
             android:layout_marginBottom="16dp" />
@@ -60,27 +62,30 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/btnCancelDropbox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Cancel"
+                android:text="@string/dropbox_cancel"
                 android:layout_marginEnd="8dp"
                 android:backgroundTint="#CCCCCC"
-                android:textColor="#333333" />
+                android:textColor="#333333"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btnConnectDropbox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Connect"
+                android:text="@string/dropbox_connect"
                 android:layout_marginStart="8dp"
                 android:backgroundTint="#003366"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                style="?android:attr/buttonBarButtonStyle" />
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

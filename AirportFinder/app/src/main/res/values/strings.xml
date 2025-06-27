@@ -1,4 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Airport Finder</string>
+    
+    <!-- Main Activity Strings -->
+    <string name="app_logo_description">Airport Finder Logo</string>
+    <string name="app_title">Airport Finder</string>
+    <string name="coordinate_format_label">Coordinate Format</string>
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+    <string name="find_airport_button">Find Airport</string>
+    <string name="no_airports_found">No airports found within %1$d nm radius</string>
+    <string name="loading">Loading…</string>
+    
+    <!-- Airport Card Strings -->
+
+
+    <string name="expand_collapse">Expand/Collapse</string>
+    <string name="weather_section_title">Weather Information</string>
+    <string name="notam_section_title">NOTAMs</string>
+    <string name="no_weather_data">No weather data available</string>
+    <string name="no_notam_data">No NOTAM data available</string>
+    
+    <!-- Accessibility Strings -->
+    <string name="content_desc_expand_button">Expand or collapse airport information</string>
+    <string name="dropbox_logo_description">Dropbox logo</string>
+    
+    <!-- Format Description -->
+    <string name="format_desc_dms">Degrees Minutes Seconds.Decimal (40°45\"30.25\"N)</string>
+    <string name="quick_paste_label">Quick Paste (Any Format)</string>
+    <string name="paste_coordinates_hint">Paste coordinates here (e.g., 40.7589, -73.9851 or 40°45\"32\"N 73°59\"06\"W)</string>
+    <string name="parse_button">Parse</string>
+    
+    <!-- API Key Setup Strings -->
+    <string name="api_key_instructions">Enter your API keys to access real-time aviation weather and NOTAM data.</string>
+    <string name="dropbox_token_instructions">To get your access token, visit the Dropbox Developer Console and create an app.</string>
+    <string name="api_key_setup_title">API Key Setup</string>
+    <string name="api_key_required_message">Please enter your API keys to access weather and NOTAM data:</string>
+
+    <!-- Coordinate Input Strings -->
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="my_location">📍 My Location</string>
+    <string name="degrees_hint">DD</string>
+    <string name="lon_degrees_hint">DDD</string>
+    <string name="minutes_hint">MM</string>
+    <string name="seconds_hint">SS</string>
+    <string name="decimal_hint">.XX</string>
+    <string name="degree_symbol">°</string>
+    <string name="minute_symbol">´</string>
+    <string name="second_symbol">"</string>
+    <string name="north_symbol">N</string>
+    <string name="south_symbol">S</string>
+    <string name="east_symbol">E</string>
+    <string name="west_symbol">W</string>
+    <string name="decimal_point">.</string>
+    <string name="decimal_seconds_hint">dd</string>
+
+    <!-- Error Messages -->
+    <string name="no_airports_found_format">No airports found within %1$d NM of the specified coordinates.</string>
+    <string name="error_loading_notams">Error loading NOTAMs: %1$s</string>
+    <string name="error_loading_weather">Error loading weather data: %1$s</string>
+    <string name="api_keys_saved">API keys saved successfully!</string>
+
+    <!-- Menu Items -->
+
+    <!-- Button Labels -->
+    <string name="minutes_label">MM</string>
+    <string name="seconds_label">SS</string>
+    <string name="decimal_seconds_label">dd</string>
+    <string name="degree_label">°</string>
+    <string name="minute_label">′</string>
+    <string name="second_label">″</string>
+
+    <string name="refresh_notam">Refresh NOTAMs</string>
+    <string name="cancel">Cancel</string>
+    <string name="connect">Connect</string>
+    <string name="close">Close</string>
+
+    <!-- Coordinate Format Labels -->
+    <string name="gps_coordinates_hint"></string>
+    <string name="icao_section_title">Or Enter ICAO Code</string>
+    <string name="icao_code_hint">Enter ICAO code (e.g., KJFK)</string>
+    <string name="add">Add</string>
+    <string name="no_airports_selected">No airports selected</string>
+    <string name="search_radius_label">Search Radius (NM)</string>
+    <string name="default_radius">300</string>
+    <string name="nautical_mile_unit">NM</string>
+    <string name="nautical_mile_desc">(Nautical Miles: 1 NM = 1.852 km)</string>
+    <string name="find_airports">🔍 Find Nearest Airports</string>
+    <string name="initial_result_message">Enter coordinates or ICAO code and tap search to find nearby airports...</string>
+
+    <string name="latitude_decimal">Latitude (Decimal Degrees)</string>
+    <string name="longitude_decimal">Longitude (Decimal Degrees)</string>
+    <string name="gps_coordinates">GPS Coordinates</string>
+    <string name="latitude_decimal_hint">e.g., 40.758896</string>
+    <string name="longitude_decimal_hint">e.g., -73.985130</string>
+
+    <!-- Airport Card Strings -->
+    <string name="refresh_metar">Refresh METAR</string>
+    <string name="taf_title">TAF</string>
+    <string name="loading_taf">Loading TAF...</string>
+    <string name="no_notams_available">No NOTAMs available</string>
+    <string name="sample_notam_id">A1234/23</string>
+    <string name="sample_notam_type">OBST</string>
+    <string name="sample_notam_text">CRANE ERECTED 1NM NORTH OF RWY 27, HEIGHT 150FT AGL</string>
+    <string name="notam_validity_format">Valid: %1$s</string>
+
+
+    <string name="track_format">Trk: %1$d°</string>
+    <string name="loading_airports_progress">Loading airports... %1$d</string>
+    <string name="loading_complete">Loading complete. Found %1$d airports.</string>
+    <string name="icao_code_added">Added airport %1$s</string>
+    <string name="no_metar_data">No METAR data available</string>
+    <string name="no_taf_data">No TAF data available</string>
+    <string name="api_key_required">API key is required</string>
+    <string name="airport_location_format">Location: %1$.4f° %2$s, %3$.4f° %4$s</string>
+    <string name="airport_elevation_format">Elevation: %1$d ft MSL</string>
+
+    <!-- Airport Bubble Strings -->
+    <string name="sample_icao">KJFK</string>
+    <string name="sample_airport_name">John F. Kennedy Intl</string>
+
+    <!-- API Key Setup Modal -->
+    <string name="close_api_setup">Close</string>
+    <string name="avwx_api_key_title">AVWX API Key</string>
+    <string name="avwx_api_key_url">Get your key at: https://account.avwx.rest/tokens</string>
+    <string name="avwx_api_key_hint">Enter AVWX API Key</string>
+    <string name="autorouter_api_key_title">Autorouter API Key</string>
+    <string name="autorouter_api_key_url">Get your key at: https://www.autorouter.aero/userhome</string>
+    <string name="autorouter_api_key_hint">Enter Autorouter API Key</string>
+    <string name="save_api_keys">Save API Keys</string>
+
+    <!-- Weather Data Formats -->
+    <string name="metar_raw_format">%1$s %2$sZ 28007KT 10SM FEW050 23/16 A3002 RMK AO2 SLP166 T02280161</string>
+    <string name="metar_decoded_wind">Wind: %1$d° at %2$d knots</string>
+    <string name="metar_decoded_visibility">Visibility: %1$d statute miles</string>
+    <string name="metar_decoded_clouds">Clouds: %1$s</string>
+    <string name="metar_decoded_temperature">Temperature: %1$d°C (%2$d°F)</string>
+    <string name="metar_decoded_dew_point">Dew Point: %1$d°C (%2$d°F)</string>
+    <string name="metar_decoded_altimeter">Altimeter: %1$.2f inHg</string>
+    <string name="taf_raw_format">%1$s %2$sZ %3$s12/%4$s18 28008KT P6SM FEW050 SCT150 FM%3$s2000 VRB03KT P6SM SKC</string>
+    <string name="taf_decoded_period">From %1$sth %2$s:00Z to %3$sth %4$s:00Z:</string>
+    <string name="taf_decoded_wind">Wind: %1$s at %2$d knots</string>
+    <string name="taf_decoded_visibility">Visibility: More than %1$d statute miles</string>
+    <string name="taf_decoded_clouds_multi">Clouds: %1$s at %2$d feet, %3$s at %4$d feet</string>
+    <string name="taf_decoded_clouds_clear">Clouds: Clear</string>
+
+    <!-- Dropbox Setup Modal -->
+    <string name="dropbox_access_token_hint">Dropbox Access Token</string>
+    <string name="dropbox_cancel">Cancel</string>
+    <string name="dropbox_connect">Connect</string>
+
+    <!-- Dialog Titles -->
+    <string name="dropbox_integration">Dropbox Integration</string>
+    <string name="dropbox_description">Connect your Dropbox account to save airport reports directly to your cloud storage.</string>
+    <string name="dropbox_token_hint">Dropbox Access Token</string>
+
+    <!-- Coordinate Format Names -->
+    <string name="format_dms">DMS (Degrees, Minutes, Seconds)</string>
+    <string name="format_decimal">Decimal Degrees</string>
+    <string name="format_gps">GPS Coordinates</string>
+
+    <!-- Toast Messages -->
+    <string name="error_invalid_coordinates">Please enter valid coordinates</string>
+    <string name="error_database_not_loaded">Airport database not loaded yet</string>
+    <string name="error_no_icao_selected">No ICAO codes selected</string>
+    <string name="error_airport_not_found">Error: Selected airport not found</string>
+    <string name="notam_error_format">NOTAM Error: %1$s</string>
+    <string name="airport_saved_to_dropbox">Airport %1$s saved to Dropbox</string>
+    <string name="no_airport_data">No airport data to save</string>
+    <string name="error_parsing_coordinates">Error parsing coordinates: %1$s</string>
+    <string name="coordinates_parsed_success">Coordinates parsed successfully!</string>
+    <string name="paste_coordinates_first">Please paste coordinates first</string>
+    <string name="unable_to_parse_coordinates">Unable to parse coordinates. Please check the format.</string>
+    <string name="error_getting_location">Error getting location: %1$s</string>
+
+    <!-- Results Display -->
+    <string name="no_airports_in_radius">No airports found within the specified radius.</string>
+    <string name="found_airports_header">Found %1$d airports:</string>
+    <string name="airport_name_format">%1$s (%2$s)</string>
+
+    <!-- Direction Labels -->
+
+    <!-- Location Format -->
+    <string name="location_format">Location: %1$.2f° %2$s, %3$.2f° %4$s</string>
+    <string name="distance_format">Distance: %1$.2f NM</string>
+    <!-- Coordinate symbols and formats -->
+    <string name="minutes_format">MM</string>
+    <string name="seconds_format">SS</string>
+    <string name="decimal_seconds_format">dd</string>
+
+    <!-- Menu items -->
+    <string name="menu_api_settings">API Settings</string>
+    <!-- Airport Card -->
+    <string name="airport_type_format">Type: %1$s</string>
+    <string name="show_details">Show Details</string>
+    <string name="hide_details">Hide Details</string>
+
+    <!-- API Key Setup -->
+    <string name="api_key_security_notice">Your API key will be securely stored and only used for weather data requests.</string>
+    <!-- Sample Data -->
+    <string name="sample_distance">25.3 NM</string>
+    <string name="metar_title">METAR</string>
+    <string name="loading_metar">Loading METAR...</string>
+    <string name="notams_title">NOTAMs</string>
+    <string name="refresh_notams">Refresh NOTAMs</string>
+    <string name="generate_pdf">Generate PDF</string>
+    <string name="save_to_dropbox">Save to Dropbox</string>
+    <string name="sample_metar_raw_format">%1$s %2$sZ AUTO 12010KT 10SM CLR 25/15 A3001 RMK AO2</string>
+    <string name="sample_metar_decoded">Automated observation, wind from 120° at 10 knots, visibility 10 statute miles, sky clear, temperature 25°C, dew point 15°C, altimeter 30.01 inHg</string>
+
+    <!-- Weather Information -->
+    <string name="refresh_taf">Refresh TAF</string>
+
+    <!-- NOTAM Information -->
+    <string name="notam_not_available">Not available</string>
+    <string name="notam_type_unknown">Unknown type</string>
+    <string name="notam_no_details">No details available</string>
+    <string name="notam_validity_unknown">Validity unknown</string>
+
+    <!-- Actions -->
 </resources>

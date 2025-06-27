@@ -1,0 +1,392 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AvwxApiService.java</file>
+  <line>319</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.AvwxApiService.FetchWeatherTask com.example.airportfinder.WeatherData parseWeatherResponse(java.lang.String jsonResponse, boolean isMetar)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Method invocation &lt;code&gt;getTime&lt;/code&gt; may produce &lt;code&gt;NullPointerException&lt;/code&gt;</description>
+  <highlighted_element>getTime</highlighted_element>
+  <language>JAVA</language>
+  <offset>54</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1549</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity com.example.airportfinder.MainActivity.CoordinateParseResult parseDMSFormat(java.lang.String input)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(1)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(1)</highlighted_element>
+  <language>JAVA</language>
+  <offset>42</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1550</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity com.example.airportfinder.MainActivity.CoordinateParseResult parseDMSFormat(java.lang.String input)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(2)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(2)</highlighted_element>
+  <language>JAVA</language>
+  <offset>42</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1551</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity com.example.airportfinder.MainActivity.CoordinateParseResult parseDMSFormat(java.lang.String input)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(3)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(3)</highlighted_element>
+  <language>JAVA</language>
+  <offset>47</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1552</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity com.example.airportfinder.MainActivity.CoordinateParseResult parseDMSFormat(java.lang.String input)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Method invocation &lt;code&gt;equals&lt;/code&gt; may produce &lt;code&gt;NullPointerException&lt;/code&gt;</description>
+  <highlighted_element>equals</highlighted_element>
+  <language>JAVA</language>
+  <offset>47</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1555</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity com.example.airportfinder.MainActivity.CoordinateParseResult parseDMSFormat(java.lang.String input)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(5)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(5)</highlighted_element>
+  <language>JAVA</language>
+  <offset>42</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1556</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity com.example.airportfinder.MainActivity.CoordinateParseResult parseDMSFormat(java.lang.String input)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(6)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(6)</highlighted_element>
+  <language>JAVA</language>
+  <offset>42</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1557</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity com.example.airportfinder.MainActivity.CoordinateParseResult parseDMSFormat(java.lang.String input)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(7)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(7)</highlighted_element>
+  <language>JAVA</language>
+  <offset>47</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1558</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity com.example.airportfinder.MainActivity.CoordinateParseResult parseDMSFormat(java.lang.String input)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Method invocation &lt;code&gt;equals&lt;/code&gt; may produce &lt;code&gt;NullPointerException&lt;/code&gt;</description>
+  <highlighted_element>equals</highlighted_element>
+  <language>JAVA</language>
+  <offset>46</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1591</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity com.example.airportfinder.MainActivity.CoordinateParseResult parseDMFormat(java.lang.String input)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(1)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(1)</highlighted_element>
+  <language>JAVA</language>
+  <offset>42</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1592</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity com.example.airportfinder.MainActivity.CoordinateParseResult parseDMFormat(java.lang.String input)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(2)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(2)</highlighted_element>
+  <language>JAVA</language>
+  <offset>47</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1593</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity com.example.airportfinder.MainActivity.CoordinateParseResult parseDMFormat(java.lang.String input)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Method invocation &lt;code&gt;equals&lt;/code&gt; may produce &lt;code&gt;NullPointerException&lt;/code&gt;</description>
+  <highlighted_element>equals</highlighted_element>
+  <language>JAVA</language>
+  <offset>47</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1596</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity com.example.airportfinder.MainActivity.CoordinateParseResult parseDMFormat(java.lang.String input)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(4)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(4)</highlighted_element>
+  <language>JAVA</language>
+  <offset>42</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1597</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity com.example.airportfinder.MainActivity.CoordinateParseResult parseDMFormat(java.lang.String input)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(5)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(5)</highlighted_element>
+  <language>JAVA</language>
+  <offset>47</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1598</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity com.example.airportfinder.MainActivity.CoordinateParseResult parseDMFormat(java.lang.String input)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Method invocation &lt;code&gt;equals&lt;/code&gt; may produce &lt;code&gt;NullPointerException&lt;/code&gt;</description>
+  <highlighted_element>equals</highlighted_element>
+  <language>JAVA</language>
+  <offset>46</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>2324</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity double parseGPSLatitude(java.lang.String gpsText)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(1)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(1)</highlighted_element>
+  <language>JAVA</language>
+  <offset>48</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>2325</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity double parseGPSLatitude(java.lang.String gpsText)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(2)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(2)</highlighted_element>
+  <language>JAVA</language>
+  <offset>48</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>2326</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity double parseGPSLatitude(java.lang.String gpsText)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(3)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(3)</highlighted_element>
+  <language>JAVA</language>
+  <offset>48</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>2333</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity double parseGPSLatitude(java.lang.String gpsText)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Method invocation &lt;code&gt;equals&lt;/code&gt; may produce &lt;code&gt;NullPointerException&lt;/code&gt;</description>
+  <highlighted_element>equals</highlighted_element>
+  <language>JAVA</language>
+  <offset>29</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>2342</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity double parseGPSLongitude(java.lang.String gpsText)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(1)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(1)</highlighted_element>
+  <language>JAVA</language>
+  <offset>48</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>2343</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity double parseGPSLongitude(java.lang.String gpsText)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(2)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(2)</highlighted_element>
+  <language>JAVA</language>
+  <offset>48</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>2344</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity double parseGPSLongitude(java.lang.String gpsText)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;matcher.group(3)&lt;/code&gt; might be null</description>
+  <highlighted_element>matcher.group(3)</highlighted_element>
+  <language>JAVA</language>
+  <offset>48</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>2351</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity double parseGPSLongitude(java.lang.String gpsText)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Method invocation &lt;code&gt;equals&lt;/code&gt; may produce &lt;code&gt;NullPointerException&lt;/code&gt;</description>
+  <highlighted_element>equals</highlighted_element>
+  <language>JAVA</language>
+  <offset>29</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/WeatherFormatter.java</file>
+  <line>66</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.WeatherFormatter java.lang.String formatTimestamp(java.lang.String timestamp)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;date&lt;/code&gt; might be null</description>
+  <highlighted_element>date</highlighted_element>
+  <language>JAVA</language>
+  <offset>39</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/WeatherVisualizationHelper.java</file>
+  <line>188</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.WeatherVisualizationHelper android.text.SpannableString createWindIndicator(com.example.airportfinder.WeatherData metar)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;speed&lt;/code&gt; might be null</description>
+  <highlighted_element>speed</highlighted_element>
+  <language>JAVA</language>
+  <offset>45</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/WeatherVisualizationHelper.java</file>
+  <line>244</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.WeatherVisualizationHelper boolean hasLifrConditions(java.lang.String rawText)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;ceilingMatcher.group(2)&lt;/code&gt; might be null</description>
+  <highlighted_element>ceilingMatcher.group(2)</highlighted_element>
+  <language>JAVA</language>
+  <offset>42</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/WeatherVisualizationHelper.java</file>
+  <line>275</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.WeatherVisualizationHelper boolean hasIfrConditions(java.lang.String rawText)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;ceilingMatcher.group(2)&lt;/code&gt; might be null</description>
+  <highlighted_element>ceilingMatcher.group(2)</highlighted_element>
+  <language>JAVA</language>
+  <offset>42</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/WeatherVisualizationHelper.java</file>
+  <line>306</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.WeatherVisualizationHelper boolean hasMvfrConditions(java.lang.String rawText)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;ceilingMatcher.group(2)&lt;/code&gt; might be null</description>
+  <highlighted_element>ceilingMatcher.group(2)</highlighted_element>
+  <language>JAVA</language>
+  <offset>42</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/WeatherVisualizationHelper.java</file>
+  <line>396</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.WeatherVisualizationHelper void colorCodeClouds(android.text.SpannableStringBuilder builder, java.lang.String text)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Argument &lt;code&gt;cloudMatcher.group(2)&lt;/code&gt; might be null</description>
+  <highlighted_element>cloudMatcher.group(2)</highlighted_element>
+  <language>JAVA</language>
+  <offset>42</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/WeatherVisualizationHelper.java</file>
+  <line>400</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.WeatherVisualizationHelper void colorCodeClouds(android.text.SpannableStringBuilder builder, java.lang.String text)" />
+  <problem_class id="DataFlowIssue" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Nullability and data flow problems</problem_class>
+  <description>Method invocation &lt;code&gt;equals&lt;/code&gt; may produce &lt;code&gt;NullPointerException&lt;/code&gt;</description>
+  <highlighted_element>equals</highlighted_element>
+  <language>JAVA</language>
+  <offset>26</offset>
+  <length>6</length>
+</problem>
+</problems>

@@ -1,0 +1,16 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1070</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="AndroidLintInflateParams" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Layout Inflation without a Parent</problem_class>
+  <hints />
+  <description>&lt;html&gt;Avoid passing &lt;code&gt;null&lt;/code&gt; as the view root (needed to resolve layout parameters on the inflated layout's root element)&lt;/html&gt;</description>
+  <highlighted_element>null</highlighted_element>
+  <language>JAVA</language>
+  <offset>74</offset>
+  <length>4</length>
+</problem>
+</problems>

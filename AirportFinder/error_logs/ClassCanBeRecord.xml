@@ -1,0 +1,15 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/ApiResponseCache.java</file>
+  <line>180</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="class" FQNAME="com.example.airportfinder.ApiResponseCache.CacheEntry" />
+  <problem_class id="ClassCanBeRecord" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class can be record class</problem_class>
+  <description>Class can be record class</description>
+  <highlighted_element>CacheEntry</highlighted_element>
+  <language>JAVA</language>
+  <offset>25</offset>
+  <length>10</length>
+</problem>
+</problems>

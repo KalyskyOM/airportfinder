@@ -23,7 +23,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="API Key Setup"
+                android:text="@string/api_key_setup_title"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/aviationBlue" />
@@ -33,7 +33,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_close"
-                android:contentDescription="Close" />
+                android:contentDescription="@string/close_api_setup" />
         </LinearLayout>
 
         <View
@@ -46,14 +46,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter your API keys to access real-time aviation weather and NOTAM data."
+            android:text="@string/api_key_instructions"
             android:textSize="14sp"
             android:layout_marginBottom="16dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="AVWX API Key"
+            android:text="@string/avwx_api_key_title"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginBottom="4dp" />
@@ -61,7 +61,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Get your key at: https://account.avwx.rest/tokens"
+            android:text="@string/avwx_api_key_url"
             android:textSize="12sp"
             android:textColor="@color/textSecondary"
             android:layout_marginBottom="8dp" />
@@ -72,14 +72,15 @@
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text_background"
             android:padding="12dp"
-            android:hint="Enter AVWX API Key"
+            android:hint="@string/avwx_api_key_hint"
             android:inputType="textVisiblePassword"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:autofillHints="password" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Autorouter API Key"
+            android:text="@string/autorouter_api_key_title"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginBottom="4dp" />
@@ -87,7 +88,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Get your key at: https://www.autorouter.aero/userhome"
+            android:text="@string/autorouter_api_key_url"
             android:textSize="12sp"
             android:textColor="@color/textSecondary"
             android:layout_marginBottom="8dp" />
@@ -98,14 +99,15 @@
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text_background"
             android:padding="12dp"
-            android:hint="Enter Autorouter API Key"
+            android:hint="@string/autorouter_api_key_hint"
             android:inputType="textVisiblePassword"
-            android:layout_marginBottom="24dp" />
+            android:layout_marginBottom="24dp"
+            android:autofillHints="password" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Your API keys will be securely stored using Android's encryption system."
+            android:text="@string/api_key_security_notice"
             android:textSize="12sp"
             android:textStyle="italic"
             android:textColor="@color/textSecondary"
@@ -115,7 +117,7 @@
             android:id="@+id/btn_save_api_keys"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save API Keys"
+            android:text="@string/save_api_keys"
             android:textColor="@color/white"
             android:background="@color/aviationBlue"
             android:padding="12dp" />

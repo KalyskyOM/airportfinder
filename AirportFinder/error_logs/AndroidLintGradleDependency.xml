@@ -1,0 +1,106 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/build.gradle</file>
+  <line>5</line>
+  <module>Airport_Finder.app</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/build.gradle" />
+  <problem_class id="AndroidLintGradleDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Obsolete Gradle Dependency</problem_class>
+  <hints />
+  <description>&lt;html&gt;A newer version of &lt;code&gt;compileSdkVersion&lt;/code&gt; than 34 is available: 35&lt;/html&gt;</description>
+  <highlighted_element>compileSdk 34</highlighted_element>
+  <language>Groovy</language>
+  <offset>4</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/build.gradle</file>
+  <line>30</line>
+  <module>Airport_Finder.app</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/build.gradle" />
+  <problem_class id="AndroidLintGradleDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Obsolete Gradle Dependency</problem_class>
+  <hints />
+  <description>&lt;html&gt;A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1&lt;/html&gt;</description>
+  <highlighted_element>'androidx.appcompat:appcompat:1.6.1'</highlighted_element>
+  <language>Groovy</language>
+  <offset>19</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/build.gradle</file>
+  <line>31</line>
+  <module>Airport_Finder.app</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/build.gradle" />
+  <problem_class id="AndroidLintGradleDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Obsolete Gradle Dependency</problem_class>
+  <hints />
+  <description>&lt;html&gt;A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1&lt;/html&gt;</description>
+  <highlighted_element>'androidx.constraintlayout:constraintlayout:2.1.4'</highlighted_element>
+  <language>Groovy</language>
+  <offset>19</offset>
+  <length>50</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/build.gradle</file>
+  <line>32</line>
+  <module>Airport_Finder.app</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/build.gradle" />
+  <problem_class id="AndroidLintGradleDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Obsolete Gradle Dependency</problem_class>
+  <hints />
+  <description>&lt;html&gt;A newer version of com.google.android.material:material than 1.9.0 is available: 1.12.0&lt;/html&gt;</description>
+  <highlighted_element>'com.google.android.material:material:1.9.0'</highlighted_element>
+  <language>Groovy</language>
+  <offset>19</offset>
+  <length>44</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/build.gradle</file>
+  <line>34</line>
+  <module>Airport_Finder.app</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/build.gradle" />
+  <problem_class id="AndroidLintGradleDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Obsolete Gradle Dependency</problem_class>
+  <hints />
+  <description>&lt;html&gt;A newer version of androidx.recyclerview:recyclerview than 1.3.0 is available: 1.4.0&lt;/html&gt;</description>
+  <highlighted_element>'androidx.recyclerview:recyclerview:1.3.0'</highlighted_element>
+  <language>Groovy</language>
+  <offset>19</offset>
+  <length>42</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/build.gradle</file>
+  <line>35</line>
+  <module>Airport_Finder.app</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/build.gradle" />
+  <problem_class id="AndroidLintGradleDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Obsolete Gradle Dependency</problem_class>
+  <hints />
+  <description>&lt;html&gt;A newer version of androidx.security:security-crypto than 1.1.0-alpha06 is available: 1.1.0-beta01&lt;/html&gt;</description>
+  <highlighted_element>'androidx.security:security-crypto:1.1.0-alpha06'</highlighted_element>
+  <language>Groovy</language>
+  <offset>19</offset>
+  <length>49</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/build.gradle</file>
+  <line>37</line>
+  <module>Airport_Finder.app</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/build.gradle" />
+  <problem_class id="AndroidLintGradleDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Obsolete Gradle Dependency</problem_class>
+  <hints />
+  <description>&lt;html&gt;A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1&lt;/html&gt;</description>
+  <highlighted_element>'androidx.test.ext:junit:1.1.5'</highlighted_element>
+  <language>Groovy</language>
+  <offset>30</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/build.gradle</file>
+  <line>38</line>
+  <module>Airport_Finder.app</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/build.gradle" />
+  <problem_class id="AndroidLintGradleDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Obsolete Gradle Dependency</problem_class>
+  <hints />
+  <description>&lt;html&gt;A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1&lt;/html&gt;</description>
+  <highlighted_element>'androidx.test.espresso:espresso-core:3.5.1'</highlighted_element>
+  <language>Groovy</language>
+  <offset>30</offset>
+  <length>44</length>
+</problem>
+</problems>

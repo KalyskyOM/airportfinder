@@ -19,7 +19,7 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:src="@drawable/ic_airplane"
-            android:contentDescription="Airport Finder Logo"
+            android:contentDescription="@string/app_logo_description"
             android:layout_marginBottom="16dp"
             android:scaleType="centerInside"
             android:background="@drawable/circle_background"
@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Airport Finder"
+            android:text="@string/app_title"
             android:textSize="24sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -39,7 +39,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Coordinate Format"
+            android:text="@string/coordinate_format_label"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"
             android:textColor="#34495e" />
@@ -56,11 +56,66 @@
             android:id="@+id/tvFormatDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Degrees Minutes Seconds.Decimal (40°45'30.25&quot;N)"
+            android:text="@string/format_desc_dms"
             android:textSize="12sp"
             android:textStyle="italic"
             android:layout_marginBottom="16dp"
             android:textColor="#7f8c8d" />
+
+        <!-- Paste Coordinates Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quick_paste_label"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#34495e" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/etPasteCoordinates"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="@string/paste_coordinates_hint"
+                android:inputType="text"
+                android:autofillHints="location"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:textSize="12sp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnParseCoordinates"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="@string/parse_button"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnUseMyLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="@string/my_location"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+        </LinearLayout>
 
         <!-- DMS Format Container -->
         <LinearLayout
@@ -74,7 +129,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Latitude"
+                android:text="@string/latitude"
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp"
                 android:textColor="#34495e" />
@@ -90,8 +145,10 @@
                     android:id="@+id/etLatDegrees"
                     android:layout_width="60dp"
                     android:layout_height="48dp"
-                    android:hint="DD"
+                    android:hint="@string/degrees_hint"
                     android:inputType="number"
+                    android:importantForAutofill="yes"
+                    android:autofillHints="latitude"
                     android:digits="0123456789"
                     android:maxLength="2"
                     android:background="@drawable/edittext_background"
@@ -102,7 +159,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="°"
+                    android:text="@string/degree_label"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginStart="4dp"
@@ -113,8 +170,10 @@
                     android:id="@+id/etLatMinutes"
                     android:layout_width="60dp"
                     android:layout_height="48dp"
-                    android:hint="MM"
+                    android:hint="@string/minutes_label"
                     android:inputType="number"
+                    android:importantForAutofill="yes"
+                    android:autofillHints="latitude"
                     android:digits="0123456789"
                     android:maxLength="2"
                     android:background="@drawable/edittext_background"
@@ -125,7 +184,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="'"
+                    android:text="@string/minute_label"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginStart="4dp"
@@ -136,8 +195,10 @@
                     android:id="@+id/etLatSecondsWhole"
                     android:layout_width="60dp"
                     android:layout_height="48dp"
-                    android:hint="SS"
+                    android:hint="@string/seconds_label"
                     android:inputType="number"
+                    android:importantForAutofill="yes"
+                    android:autofillHints="latitude"
                     android:digits="0123456789"
                     android:maxLength="2"
                     android:background="@drawable/edittext_background"
@@ -148,7 +209,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="."
+                    android:text="@string/decimal_point"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginStart="4dp"
@@ -159,8 +220,10 @@
                     android:id="@+id/etLatSecondsDecimal"
                     android:layout_width="60dp"
                     android:layout_height="48dp"
-                    android:hint="dd"
+                    android:hint="@string/decimal_seconds_label"
                     android:inputType="number"
+                    android:importantForAutofill="yes"
+                    android:autofillHints="latitude"
                     android:digits="0123456789"
                     android:maxLength="2"
                     android:background="@drawable/edittext_background"
@@ -171,7 +234,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="&quot;"
+                    android:text="@string/second_label"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginStart="4dp"
@@ -182,7 +245,7 @@
                     android:id="@+id/tvLatDirection"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:text="N"
+                    android:text="@string/north_symbol"
                     android:textStyle="bold"
                     android:background="@drawable/direction_background"
                     android:gravity="center"
@@ -218,7 +281,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Longitude"
+                android:text="@string/longitude"
                 android:textStyle="bold"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
@@ -235,8 +298,10 @@
                     android:id="@+id/etLonDegrees"
                     android:layout_width="80dp"
                     android:layout_height="48dp"
-                    android:hint="DDD"
+                    android:hint="@string/lon_degrees_hint"
                     android:inputType="number"
+                    android:importantForAutofill="yes"
+                    android:autofillHints="longitude"
                     android:digits="0123456789"
                     android:maxLength="3"
                     android:background="@drawable/edittext_background"
@@ -247,7 +312,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="°"
+                    android:text="@string/degree_label"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginStart="4dp"
@@ -258,8 +323,10 @@
                     android:id="@+id/etLonMinutes"
                     android:layout_width="60dp"
                     android:layout_height="48dp"
-                    android:hint="MM"
+                    android:hint="@string/minutes_label"
                     android:inputType="number"
+                    android:importantForAutofill="yes"
+                    android:autofillHints="longitude"
                     android:digits="0123456789"
                     android:maxLength="2"
                     android:background="@drawable/edittext_background"
@@ -270,7 +337,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="'"
+                    android:text="@string/minute_label"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginStart="4dp"
@@ -281,10 +348,11 @@
                     android:id="@+id/etLonSecondsWhole"
                     android:layout_width="60dp"
                     android:layout_height="48dp"
-                    android:hint="SS"
+                    android:hint="@string/seconds_label"
                     android:inputType="number"
                     android:digits="0123456789"
                     android:maxLength="2"
+                    android:autofillHints="postalCode"
                     android:background="@drawable/edittext_background"
                     android:padding="12dp"
                     android:textAlignment="center"
@@ -293,7 +361,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="."
+                    android:text="@string/decimal_point"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginStart="4dp"
@@ -304,10 +372,11 @@
                     android:id="@+id/etLonSecondsDecimal"
                     android:layout_width="60dp"
                     android:layout_height="48dp"
-                    android:hint="dd"
+                    android:hint="@string/decimal_seconds_label"
                     android:inputType="number"
                     android:digits="0123456789"
                     android:maxLength="2"
+                    android:autofillHints="postalCode"
                     android:background="@drawable/edittext_background"
                     android:padding="12dp"
                     android:textAlignment="center"
@@ -316,7 +385,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="&quot;"
+                    android:text="@string/second_label"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginStart="4dp"
@@ -327,7 +396,7 @@
                     android:id="@+id/tvLonDirection"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:text="E"
+                    android:text="@string/east_symbol"
                     android:textStyle="bold"
                     android:background="@drawable/direction_background"
                     android:gravity="center"
@@ -372,7 +441,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Latitude (Decimal Degrees)"
+                android:text="@string/latitude_decimal"
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp"
                 android:textColor="#34495e" />
@@ -381,7 +450,7 @@
                 android:id="@+id/etLatDecimal"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="e.g., 40.758896"
+                android:hint="@string/latitude_decimal_hint"
                 android:inputType="numberDecimal|numberSigned"
                 android:background="@drawable/edittext_background"
                 android:padding="12dp"
@@ -390,7 +459,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Longitude (Decimal Degrees)"
+                android:text="@string/longitude_decimal"
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp"
                 android:textColor="#34495e" />
@@ -399,7 +468,7 @@
                 android:id="@+id/etLonDecimal"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="e.g., -73.985130"
+                android:hint="@string/longitude_decimal_hint"
                 android:inputType="numberDecimal|numberSigned"
                 android:background="@drawable/edittext_background"
                 android:padding="12dp"
@@ -418,7 +487,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="GPS Coordinates"
+                android:text="@string/gps_coordinates"
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp"
                 android:textColor="#34495e" />
@@ -427,7 +496,7 @@
                 android:id="@+id/etGPSCoordinates"
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
-                android:hint="40°45'30.25&quot;N 73°58'45.75&quot;W"
+                android:hint="@string/gps_coordinates_hint"
                 android:inputType="text"
                 android:background="@drawable/edittext_background"
                 android:padding="12dp"
@@ -441,7 +510,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Or Enter ICAO Code"
+            android:text="@string/icao_section_title"
             android:textStyle="bold"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
@@ -459,7 +528,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="48dp"
-                android:hint="Enter ICAO code (e.g., KJFK)"
+                android:hint="@string/icao_code_hint"
                 android:inputType="textCapCharacters"
                 android:maxLength="4"
                 android:background="@drawable/edittext_background"
@@ -470,7 +539,7 @@
                 android:id="@+id/btnAddIcao"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:text="Add"
+                android:text="@string/add"
                 android:textSize="14sp"
                 android:layout_marginStart="8dp"
                 android:background="@drawable/button_background"
@@ -490,7 +559,7 @@
                 android:id="@+id/tvNoIcaoSelected"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="No airports selected"
+                android:text="@string/no_airports_selected"
                 android:textStyle="italic"
                 android:textSize="12sp"
                 android:textColor="#7f8c8d"
@@ -501,11 +570,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Search Radius (NM)"
+            android:text="@string/search_radius_label"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"
             android:textColor="#34495e" />
-
+            
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -517,19 +586,20 @@
                 android:id="@+id/etSearchRadius"
                 android:layout_width="100dp"
                 android:layout_height="48dp"
-                android:hint="300"
-                android:text="300"
+                android:hint="@string/default_radius"
+                android:text="@string/default_radius"
                 android:inputType="number"
                 android:digits="0123456789"
                 android:maxLength="3"
                 android:background="@drawable/edittext_background"
                 android:padding="12dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:autofillHints="none" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="NM"
+                android:text="@string/nautical_mile_unit"
                 android:textStyle="bold"
                 android:layout_marginStart="8dp"
                 android:textSize="16sp"
@@ -538,7 +608,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="(Nautical Miles: 1 NM = 1.852 km)"
+                android:text="@string/nautical_mile_desc"
                 android:textSize="10sp"
                 android:layout_marginStart="8dp"
                 android:textColor="#7f8c8d" />
@@ -549,7 +619,7 @@
             android:id="@+id/btnFindAirport"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:text="🔍 Find Nearest Airports"
+            android:text="@string/find_airports"
             android:textSize="16sp"
             android:textStyle="bold"
             android:background="@drawable/button_background"
@@ -561,7 +631,7 @@
             android:id="@+id/tvResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter coordinates or ICAO code and tap search to find nearby airports..."
+            android:text="@string/initial_result_message"
             android:textSize="14sp"
             android:background="@drawable/result_background"
             android:padding="16dp"

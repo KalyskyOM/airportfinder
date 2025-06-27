@@ -1,0 +1,44 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AutorouterApiService.java</file>
+  <line>95</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AutorouterApiService.java" />
+  <problem_class id="AndroidLintStaticFieldLeak" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Static Field Leaks</problem_class>
+  <hints />
+  <description>&lt;html&gt;This &lt;code&gt;AsyncTask&lt;/code&gt; class should be static or leaks might occur (com.example.airportfinder.AutorouterApiService.FetchNotamTask)&lt;/html&gt;</description>
+  <highlighted_element>FetchNotamTask</highlighted_element>
+  <language>JAVA</language>
+  <offset>18</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AvwxApiService.java</file>
+  <line>145</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AvwxApiService.java" />
+  <problem_class id="AndroidLintStaticFieldLeak" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Static Field Leaks</problem_class>
+  <hints />
+  <description>&lt;html&gt;This &lt;code&gt;AsyncTask&lt;/code&gt; class should be static or leaks might occur (com.example.airportfinder.AvwxApiService.FetchWeatherTask)&lt;/html&gt;</description>
+  <highlighted_element>FetchWeatherTask</highlighted_element>
+  <language>JAVA</language>
+  <offset>18</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1124</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java" />
+  <problem_class id="AndroidLintStaticFieldLeak" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Static Field Leaks</problem_class>
+  <hints />
+  <description>&lt;html&gt;This &lt;code&gt;AsyncTask&lt;/code&gt; class should be static or leaks might occur (com.example.airportfinder.MainActivity.LoadAirportDataTask)&lt;/html&gt;</description>
+  <highlighted_element>LoadAirportDataTask</highlighted_element>
+  <language>JAVA</language>
+  <offset>18</offset>
+  <length>19</length>
+</problem>
+</problems>

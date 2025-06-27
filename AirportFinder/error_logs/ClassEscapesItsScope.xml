@@ -1,0 +1,28 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/NotamAdapter.java</file>
+  <line>26</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.NotamAdapter com.example.airportfinder.NotamAdapter.NotamViewHolder onCreateViewHolder(android.view.ViewGroup parent, int viewType)" />
+  <problem_class id="ClassEscapesItsScope" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Class is exposed outside of its visibility scope</problem_class>
+  <description>Class &lt;code&gt;NotamViewHolder&lt;/code&gt; is exposed outside its defined visibility scope #loc</description>
+  <highlighted_element>NotamViewHolder</highlighted_element>
+  <language>JAVA</language>
+  <offset>11</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/NotamAdapter.java</file>
+  <line>33</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.NotamAdapter void onBindViewHolder(com.example.airportfinder.NotamAdapter.NotamViewHolder holder, int position)" />
+  <problem_class id="ClassEscapesItsScope" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Class is exposed outside of its visibility scope</problem_class>
+  <description>Class &lt;code&gt;NotamViewHolder&lt;/code&gt; is exposed outside its defined visibility scope #loc</description>
+  <highlighted_element>NotamViewHolder</highlighted_element>
+  <language>JAVA</language>
+  <offset>42</offset>
+  <length>15</length>
+</problem>
+</problems>

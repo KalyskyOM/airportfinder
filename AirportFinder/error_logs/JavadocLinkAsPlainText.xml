@@ -1,0 +1,28 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AutorouterApiService.java</file>
+  <line>24</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="class" FQNAME="com.example.airportfinder.AutorouterApiService" />
+  <problem_class id="JavadocLinkAsPlainText" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Link specified as plain text</problem_class>
+  <description>Link specified as plain text</description>
+  <highlighted_element>https://www.autorouter.aero/wiki/api/</highlighted_element>
+  <language>JAVA</language>
+  <offset>22</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AvwxApiService.java</file>
+  <line>30</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="class" FQNAME="com.example.airportfinder.AvwxApiService" />
+  <problem_class id="JavadocLinkAsPlainText" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Link specified as plain text</problem_class>
+  <description>Link specified as plain text</description>
+  <highlighted_element>https://avwx.docs.apiary.io</highlighted_element>
+  <language>JAVA</language>
+  <offset>22</offset>
+  <length>27</length>
+</problem>
+</problems>

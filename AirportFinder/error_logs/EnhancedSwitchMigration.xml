@@ -1,0 +1,28 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/ApiErrorHandler.java</file>
+  <line>41</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.ApiErrorHandler void handleApiError(android.content.Context context, com.example.airportfinder.ApiErrorHandler.ErrorType errorType, int statusCode)" />
+  <problem_class id="EnhancedSwitchMigration" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement can be replaced with enhanced 'switch'</problem_class>
+  <description>Switch statement can be replaced with enhanced 'switch'</description>
+  <highlighted_element>switch</highlighted_element>
+  <language>JAVA</language>
+  <offset>8</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/WeatherFormatter.java</file>
+  <line>185</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.WeatherFormatter java.lang.String extractMetarSummary(com.example.airportfinder.WeatherData metar)" />
+  <problem_class id="EnhancedSwitchMigration" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement can be replaced with enhanced 'switch'</problem_class>
+  <description>Switch statement can be replaced with enhanced 'switch'</description>
+  <highlighted_element>switch</highlighted_element>
+  <language>JAVA</language>
+  <offset>16</offset>
+  <length>6</length>
+</problem>
+</problems>

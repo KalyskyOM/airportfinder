@@ -1,0 +1,15 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/WeatherPdfGenerator.java</file>
+  <line>205</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.WeatherPdfGenerator java.io.File generateWeatherReport(android.content.Context context, java.lang.String icaoCode, com.example.airportfinder.WeatherData metar, com.example.airportfinder.WeatherData taf, java.util.List&lt;com.example.airportfinder.NotamData&gt; notams)" />
+  <problem_class id="IgnoreResultOfCall" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Result of method call ignored</problem_class>
+  <description>Result of &lt;code&gt;File.mkdirs()&lt;/code&gt; is ignored #loc</description>
+  <highlighted_element>mkdirs</highlighted_element>
+  <language>JAVA</language>
+  <offset>22</offset>
+  <length>6</length>
+</problem>
+</problems>

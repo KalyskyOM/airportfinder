@@ -1,0 +1,15 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>926</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity void loadWeatherAndNotamData(com.example.airportfinder.Airport airport, android.widget.TextView tvMetarRaw, android.widget.TextView tvMetarDecoded, android.widget.TextView tvTafRaw, android.widget.TextView tvTafDecoded, androidx.recyclerview.widget.RecyclerView notamRecyclerView, android.widget.TextView emptyNotamText)" />
+  <problem_class id="JavadocDeclaration" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Javadoc declaration problems</problem_class>
+  <description>Wrong tag &lt;code&gt;Override&lt;/code&gt;</description>
+  <highlighted_element>@Override</highlighted_element>
+  <language>JAVA</language>
+  <offset>8</offset>
+  <length>9</length>
+</problem>
+</problems>

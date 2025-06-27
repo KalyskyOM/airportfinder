@@ -1,0 +1,93 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/values/strings.xml</file>
+  <line>112</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+  <problem_class id="AndroidLintPluralsCandidate" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Potential Plurals</problem_class>
+  <hints />
+  <description>&lt;html&gt;Formatting %d followed by words (&quot;airports&quot;): This should probably be a plural rather than a string&lt;/html&gt;</description>
+  <highlighted_element>&lt;string name=&quot;loading_complete&quot;&gt;Loading complete. Found %1$d airports.&lt;/string&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>79</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/values/strings.xml</file>
+  <line>136</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+  <problem_class id="AndroidLintPluralsCandidate" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Potential Plurals</problem_class>
+  <hints />
+  <description>&lt;html&gt;Formatting %d followed by words (&quot;knots&quot;): This should probably be a plural rather than a string&lt;/html&gt;</description>
+  <highlighted_element>&lt;string name=&quot;metar_decoded_wind&quot;&gt;Wind: %1$d° at %2$d knots&lt;/string&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>68</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/values/strings.xml</file>
+  <line>137</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+  <problem_class id="AndroidLintPluralsCandidate" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Potential Plurals</problem_class>
+  <hints />
+  <description>&lt;html&gt;Formatting %d followed by words (&quot;statute&quot;): This should probably be a plural rather than a string&lt;/html&gt;</description>
+  <highlighted_element>&lt;string name=&quot;metar_decoded_visibility&quot;&gt;Visibility: %1$d statute miles&lt;/string&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>79</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/values/strings.xml</file>
+  <line>144</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+  <problem_class id="AndroidLintPluralsCandidate" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Potential Plurals</problem_class>
+  <hints />
+  <description>&lt;html&gt;Formatting %d followed by words (&quot;knots&quot;): This should probably be a plural rather than a string&lt;/html&gt;</description>
+  <highlighted_element>&lt;string name=&quot;taf_decoded_wind&quot;&gt;Wind: %1$s at %2$d knots&lt;/string&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>65</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/values/strings.xml</file>
+  <line>145</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+  <problem_class id="AndroidLintPluralsCandidate" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Potential Plurals</problem_class>
+  <hints />
+  <description>&lt;html&gt;Formatting %d followed by words (&quot;statute&quot;): This should probably be a plural rather than a string&lt;/html&gt;</description>
+  <highlighted_element>&lt;string name=&quot;taf_decoded_visibility&quot;&gt;Visibility: More than %1$d statute miles&lt;/string&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>87</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/values/strings.xml</file>
+  <line>146</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+  <problem_class id="AndroidLintPluralsCandidate" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Potential Plurals</problem_class>
+  <hints />
+  <description>&lt;html&gt;Formatting %d followed by words (&quot;feet&quot;): This should probably be a plural rather than a string&lt;/html&gt;</description>
+  <highlighted_element>&lt;string name=&quot;taf_decoded_clouds_multi&quot;&gt;Clouds: %1$s at %2$d feet, %3$s at %4$d feet&lt;/string&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>93</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/values/strings.xml</file>
+  <line>180</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+  <problem_class id="AndroidLintPluralsCandidate" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Potential Plurals</problem_class>
+  <hints />
+  <description>&lt;html&gt;Formatting %d followed by words (&quot;airports&quot;): This should probably be a plural rather than a string&lt;/html&gt;</description>
+  <highlighted_element>&lt;string name=&quot;found_airports_header&quot;&gt;Found %1$d airports:&lt;/string&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>66</length>
+</problem>
+</problems>

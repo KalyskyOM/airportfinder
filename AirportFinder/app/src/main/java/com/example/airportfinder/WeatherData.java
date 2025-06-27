@@ -123,7 +123,7 @@ public class WeatherData {
     /**
      * For demo purposes, generate sample weather data
      */
-    public static WeatherData getSampleData(String icaoCode) {
+    public static WeatherData getSampleData(android.content.Context context, String icaoCode) {
         WeatherData data = new WeatherData(icaoCode);
         
         // Current date and time for realistic sample data
@@ -132,29 +132,29 @@ public class WeatherData {
         String dateTime = zulu.format(new java.util.Date());
         
         // Sample METAR
-        data.setMetarRaw(icaoCode + " " + dateTime + "Z 28007KT 10SM FEW050 23/16 A3002 RMK AO2 SLP166 T02280161");
+        data.setMetarRaw(String.format(context.getString(R.string.metar_raw_format), icaoCode, dateTime));
         data.setMetarDecoded(
-            "Wind: 280° at 7 knots\n" +
-            "Visibility: 10 statute miles\n" +
-            "Clouds: Few at 5000 feet\n" +
-            "Temperature: 23°C (73°F)\n" +
-            "Dew Point: 16°C (61°F)\n" +
-            "Altimeter: 30.02 inHg"
+            context.getString(R.string.metar_decoded_wind, 280, 7) + "\n" +
+            context.getString(R.string.metar_decoded_visibility, 10) + "\n" +
+            context.getString(R.string.metar_decoded_clouds, "Few at 5000 feet") + "\n" +
+            context.getString(R.string.metar_decoded_temperature, 23, 73) + "\n" +
+            context.getString(R.string.metar_decoded_dew_point, 16, 61) + "\n" +
+            context.getString(R.string.metar_decoded_altimeter, 30.02f)
         );
         
         // Sample TAF
-        data.setTafRaw(icaoCode + " " + dateTime + "Z " + dateTime.substring(0, 2) + "12/" + 
-                      (Integer.parseInt(dateTime.substring(0, 2)) + 1) + "18 28008KT P6SM FEW050 SCT150 " +
-                      "FM" + dateTime.substring(0, 2) + "2000 VRB03KT P6SM SKC");
+        String day = dateTime.substring(0, 2);
+        String nextDay = String.valueOf(Integer.parseInt(day) + 1);
+        data.setTafRaw(String.format(context.getString(R.string.taf_raw_format), icaoCode, dateTime, day, nextDay));
         data.setTafDecoded(
-            "From " + dateTime.substring(0, 2) + "th 12:00Z to " + (Integer.parseInt(dateTime.substring(0, 2)) + 1) + "th 18:00Z:\n" +
-            "Wind: 280° at 8 knots\n" +
-            "Visibility: More than 6 statute miles\n" +
-            "Clouds: Few at 5000 feet, Scattered at 15000 feet\n\n" +
-            "From " + dateTime.substring(0, 2) + "th 20:00Z:\n" +
-            "Wind: Variable at 3 knots\n" +
-            "Visibility: More than 6 statute miles\n" +
-            "Clouds: Clear"
+            context.getString(R.string.taf_decoded_period, day, "12", nextDay, "18") + "\n" +
+            context.getString(R.string.taf_decoded_wind, "280°", 8) + "\n" +
+            context.getString(R.string.taf_decoded_visibility, 6) + "\n" +
+            context.getString(R.string.taf_decoded_clouds_multi, "Few", 5000, "Scattered", 15000) + "\n\n" +
+            context.getString(R.string.taf_decoded_period, day, "20", day, "20") + "\n" +
+            context.getString(R.string.taf_decoded_wind, "Variable", 3) + "\n" +
+            context.getString(R.string.taf_decoded_visibility, 6) + "\n" +
+            context.getString(R.string.taf_decoded_clouds_clear)
         );
         
         return data;

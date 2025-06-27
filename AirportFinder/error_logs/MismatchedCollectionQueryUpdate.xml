@@ -1,0 +1,15 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>122</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="field" FQNAME="com.example.airportfinder.MainActivity selectedAirports" />
+  <problem_class id="MismatchedCollectionQueryUpdate" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched query and update of collection</problem_class>
+  <description>Contents of collection &lt;code&gt;selectedAirports&lt;/code&gt; are queried, but never updated #loc</description>
+  <highlighted_element>selectedAirports</highlighted_element>
+  <language>JAVA</language>
+  <offset>39</offset>
+  <length>16</length>
+</problem>
+</problems>

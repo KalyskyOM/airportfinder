@@ -1,0 +1,54 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml</file>
+  <line>449</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+  <problem_class id="AndroidLintAutofill" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Use Autofill</problem_class>
+  <hints />
+  <description>&lt;html&gt;Missing &lt;code&gt;autofillHints&lt;/code&gt; attribute&lt;/html&gt;</description>
+  <highlighted_element>EditText</highlighted_element>
+  <language>XML</language>
+  <offset>13</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml</file>
+  <line>467</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+  <problem_class id="AndroidLintAutofill" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Use Autofill</problem_class>
+  <hints />
+  <description>&lt;html&gt;Missing &lt;code&gt;autofillHints&lt;/code&gt; attribute&lt;/html&gt;</description>
+  <highlighted_element>EditText</highlighted_element>
+  <language>XML</language>
+  <offset>13</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml</file>
+  <line>495</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+  <problem_class id="AndroidLintAutofill" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Use Autofill</problem_class>
+  <hints />
+  <description>&lt;html&gt;Missing &lt;code&gt;autofillHints&lt;/code&gt; attribute&lt;/html&gt;</description>
+  <highlighted_element>EditText</highlighted_element>
+  <language>XML</language>
+  <offset>13</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml</file>
+  <line>526</line>
+  <module>Airport_Finder.app.main</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+  <problem_class id="AndroidLintAutofill" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Use Autofill</problem_class>
+  <hints />
+  <description>&lt;html&gt;Missing &lt;code&gt;autofillHints&lt;/code&gt; attribute&lt;/html&gt;</description>
+  <highlighted_element>EditText</highlighted_element>
+  <language>XML</language>
+  <offset>13</offset>
+  <length>8</length>
+</problem>
+</problems>

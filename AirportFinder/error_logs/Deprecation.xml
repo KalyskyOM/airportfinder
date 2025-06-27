@@ -1,0 +1,327 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AutorouterApiService.java</file>
+  <line>82</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.AutorouterApiService void fetchNotams(java.lang.String icaoCode, com.example.airportfinder.AutorouterApiService.ApiResponseCallback&lt;java.util.List&lt;com.example.airportfinder.NotamData&gt;&gt; callback, boolean forceRefresh)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>'execute(Params...)' is deprecated</description>
+  <highlighted_element>execute</highlighted_element>
+  <language>JAVA</language>
+  <offset>45</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AutorouterApiService.java</file>
+  <line>102</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.AutorouterApiService.FetchNotamTask FetchNotamTask(java.lang.String apiKey, com.example.airportfinder.AutorouterApiService.ApiResponseCallback&lt;java.util.List&lt;com.example.airportfinder.NotamData&gt;&gt; callback)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Default constructor in android.os.AsyncTask is deprecated</description>
+  <highlighted_element>FetchNotamTask</highlighted_element>
+  <language>JAVA</language>
+  <offset>8</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AutorouterApiService.java</file>
+  <line>108</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.AutorouterApiService.FetchNotamTask java.util.List&lt;com.example.airportfinder.NotamData&gt; doInBackground(java.lang.String... params)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Overrides deprecated method in 'android.os.AsyncTask'</description>
+  <highlighted_element>doInBackground</highlighted_element>
+  <language>JAVA</language>
+  <offset>34</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AutorouterApiService.java</file>
+  <line>191</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.AutorouterApiService.FetchNotamTask void onPostExecute(java.util.List&lt;com.example.airportfinder.NotamData&gt; result)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Overrides deprecated method in 'android.os.AsyncTask'</description>
+  <highlighted_element>onPostExecute</highlighted_element>
+  <language>JAVA</language>
+  <offset>23</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AvwxApiService.java</file>
+  <line>89</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.AvwxApiService void fetchMetar(java.lang.String icaoCode, com.example.airportfinder.AvwxApiService.ApiResponseCallback&lt;com.example.airportfinder.WeatherData&gt; callback, boolean forceRefresh)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>'execute(Params...)' is deprecated</description>
+  <highlighted_element>execute</highlighted_element>
+  <language>JAVA</language>
+  <offset>63</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AvwxApiService.java</file>
+  <line>132</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.AvwxApiService void fetchTaf(java.lang.String icaoCode, com.example.airportfinder.AvwxApiService.ApiResponseCallback&lt;com.example.airportfinder.WeatherData&gt; callback, boolean forceRefresh)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>'execute(Params...)' is deprecated</description>
+  <highlighted_element>execute</highlighted_element>
+  <language>JAVA</language>
+  <offset>61</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AvwxApiService.java</file>
+  <line>153</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.AvwxApiService.FetchWeatherTask FetchWeatherTask(java.lang.String endpoint, java.lang.String apiKey, com.example.airportfinder.AvwxApiService.ApiResponseCallback&lt;com.example.airportfinder.WeatherData&gt; callback)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Default constructor in android.os.AsyncTask is deprecated</description>
+  <highlighted_element>FetchWeatherTask</highlighted_element>
+  <language>JAVA</language>
+  <offset>8</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AvwxApiService.java</file>
+  <line>160</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.AvwxApiService.FetchWeatherTask com.example.airportfinder.WeatherData doInBackground(java.lang.String... params)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Overrides deprecated method in 'android.os.AsyncTask'</description>
+  <highlighted_element>doInBackground</highlighted_element>
+  <language>JAVA</language>
+  <offset>30</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/AvwxApiService.java</file>
+  <line>233</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.AvwxApiService.FetchWeatherTask void onPostExecute(com.example.airportfinder.WeatherData result)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Overrides deprecated method in 'android.os.AsyncTask'</description>
+  <highlighted_element>onPostExecute</highlighted_element>
+  <language>JAVA</language>
+  <offset>23</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/DropboxUploader.java</file>
+  <line>138</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.DropboxUploader void uploadFile(android.content.Context context, java.io.File file, com.example.airportfinder.DropboxUploader.UploadListener listener)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>'execute(Params...)' is deprecated</description>
+  <highlighted_element>execute</highlighted_element>
+  <language>JAVA</language>
+  <offset>10</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/DropboxUploader.java</file>
+  <line>76</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="class" FQNAME="com.example.airportfinder.DropboxUploader$1" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Default constructor in android.os.AsyncTask is deprecated</description>
+  <highlighted_element>AsyncTask&lt;Void, Integer, Boolean&gt;</highlighted_element>
+  <language>JAVA</language>
+  <offset>12</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/DropboxUploader.java</file>
+  <line>80</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.DropboxUploader$1 void onPreExecute()" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Overrides deprecated method in 'android.os.AsyncTask'</description>
+  <highlighted_element>onPreExecute</highlighted_element>
+  <language>JAVA</language>
+  <offset>27</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/DropboxUploader.java</file>
+  <line>87</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.DropboxUploader$1 java.lang.Boolean doInBackground(java.lang.Void... params)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Overrides deprecated method in 'android.os.AsyncTask'</description>
+  <highlighted_element>doInBackground</highlighted_element>
+  <language>JAVA</language>
+  <offset>30</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/DropboxUploader.java</file>
+  <line>103</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.DropboxUploader$1 java.lang.Boolean doInBackground(java.lang.Void... params)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>'publishProgress(Progress...)' is deprecated</description>
+  <highlighted_element>publishProgress</highlighted_element>
+  <language>JAVA</language>
+  <offset>24</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/DropboxUploader.java</file>
+  <line>116</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.DropboxUploader$1 void onProgressUpdate(java.lang.Integer... values)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Overrides deprecated method in 'android.os.AsyncTask'</description>
+  <highlighted_element>onProgressUpdate</highlighted_element>
+  <language>JAVA</language>
+  <offset>27</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/DropboxUploader.java</file>
+  <line>123</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.DropboxUploader$1 void onPostExecute(java.lang.Boolean success)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Overrides deprecated method in 'android.os.AsyncTask'</description>
+  <highlighted_element>onPostExecute</highlighted_element>
+  <language>JAVA</language>
+  <offset>27</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>275</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity void initializeDatabase()" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>'execute(Params...)' is deprecated</description>
+  <highlighted_element>execute</highlighted_element>
+  <language>JAVA</language>
+  <offset>34</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1124</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="class" FQNAME="com.example.airportfinder.MainActivity.LoadAirportDataTask" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Default constructor in android.os.AsyncTask is deprecated</description>
+  <highlighted_element>LoadAirportDataTask</highlighted_element>
+  <language>JAVA</language>
+  <offset>18</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1126</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity.LoadAirportDataTask void onPreExecute()" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Overrides deprecated method in 'android.os.AsyncTask'</description>
+  <highlighted_element>onPreExecute</highlighted_element>
+  <language>JAVA</language>
+  <offset>23</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1132</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity.LoadAirportDataTask java.lang.Integer doInBackground(java.lang.Void... params)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Overrides deprecated method in 'android.os.AsyncTask'</description>
+  <highlighted_element>doInBackground</highlighted_element>
+  <language>JAVA</language>
+  <offset>26</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1186</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity.LoadAirportDataTask java.lang.Integer doInBackground(java.lang.Void... params)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>'publishProgress(Progress...)' is deprecated</description>
+  <highlighted_element>publishProgress</highlighted_element>
+  <language>JAVA</language>
+  <offset>40</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1208</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity.LoadAirportDataTask void onProgressUpdate(java.lang.Integer... values)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Overrides deprecated method in 'android.os.AsyncTask'</description>
+  <highlighted_element>onProgressUpdate</highlighted_element>
+  <language>JAVA</language>
+  <offset>23</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1213</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.MainActivity.LoadAirportDataTask void onPostExecute(java.lang.Integer result)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>Overrides deprecated method in 'android.os.AsyncTask'</description>
+  <highlighted_element>onPostExecute</highlighted_element>
+  <language>JAVA</language>
+  <offset>23</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/NetworkUtils.java</file>
+  <line>39</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.NetworkUtils boolean isNetworkAvailable(android.content.Context context)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>'isConnected()' is deprecated</description>
+  <highlighted_element>isConnected</highlighted_element>
+  <language>JAVA</language>
+  <offset>66</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/NetworkUtils.java</file>
+  <line>67</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.NetworkUtils boolean isWifiConnected(android.content.Context context)" />
+  <problem_class id="Deprecation" severity="WARNING" attribute_key="DEPRECATED_ATTRIBUTES">Deprecated API usage</problem_class>
+  <description>'isConnected()' is deprecated</description>
+  <highlighted_element>isConnected</highlighted_element>
+  <language>JAVA</language>
+  <offset>62</offset>
+  <length>11</length>
+</problem>
+</problems>

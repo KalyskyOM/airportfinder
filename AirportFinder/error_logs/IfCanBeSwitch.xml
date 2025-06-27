@@ -1,0 +1,15 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/WeatherVisualizationHelper.java</file>
+  <line>400</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="method" FQNAME="com.example.airportfinder.WeatherVisualizationHelper void colorCodeClouds(android.text.SpannableStringBuilder builder, java.lang.String text)" />
+  <problem_class id="IfCanBeSwitch" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">'if' can be replaced with 'switch'</problem_class>
+  <description>&lt;code&gt;if&lt;/code&gt; statement can be replaced with 'switch' statement #loc</description>
+  <highlighted_element>if</highlighted_element>
+  <language>JAVA</language>
+  <offset>12</offset>
+  <length>2</length>
+</problem>
+</problems>

@@ -1,0 +1,28 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>671</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="class" FQNAME="com.example.airportfinder.MainActivity$13" />
+  <problem_class id="Convert2Diamond" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Explicit type can be replaced with '&lt;&gt;'</problem_class>
+  <description>Explicit type argument Airport can be replaced with &lt;&gt;</description>
+  <highlighted_element>Airport</highlighted_element>
+  <language>JAVA</language>
+  <offset>56</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/app/src/main/java/com/example/airportfinder/MainActivity.java</file>
+  <line>1027</line>
+  <module>Airport_Finder.app.main</module>
+  <package>com.example.airportfinder</package>
+  <entry_point TYPE="class" FQNAME="com.example.airportfinder.MainActivity$14" />
+  <problem_class id="Convert2Diamond" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Explicit type can be replaced with '&lt;&gt;'</problem_class>
+  <description>Explicit type argument List&lt;NotamData&gt; can be replaced with &lt;&gt;</description>
+  <highlighted_element>List&lt;NotamData&gt;</highlighted_element>
+  <language>JAVA</language>
+  <offset>92</offset>
+  <length>15</length>
+</problem>
+</problems>
