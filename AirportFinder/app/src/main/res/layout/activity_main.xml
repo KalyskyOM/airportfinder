@@ -35,33 +35,6 @@
             android:layout_marginBottom="24dp"
             android:textColor="#2c3e50" />
 
-        <!-- Coordinate Format Selection -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/coordinate_format_label"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp"
-            android:textColor="#34495e" />
-
-        <Spinner
-            android:id="@+id/spinnerCoordinateFormat"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@drawable/spinner_background"
-            android:layout_marginBottom="8dp" />
-
-        <!-- Format Description -->
-        <TextView
-            android:id="@+id/tvFormatDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/format_desc_dms"
-            android:textSize="12sp"
-            android:textStyle="italic"
-            android:layout_marginBottom="16dp"
-            android:textColor="#7f8c8d" />
-
         <!-- Paste Coordinates Section -->
         <TextView
             android:layout_width="match_parent"
@@ -116,6 +89,33 @@
                 android:paddingEnd="12dp" />
 
         </LinearLayout>
+
+        <!-- Coordinate Format Selection -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coordinate_format_label"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="#34495e" />
+
+        <Spinner
+            android:id="@+id/spinnerCoordinateFormat"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/spinner_background"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Format Description -->
+        <TextView
+            android:id="@+id/tvFormatDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/format_desc_dms"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="16dp"
+            android:textColor="#7f8c8d" />
 
         <!-- DMS Format Container -->
         <LinearLayout

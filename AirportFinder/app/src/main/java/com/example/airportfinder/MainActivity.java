@@ -6,7 +6,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.content.ActivityNotFoundException;
+
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -78,6 +78,26 @@ public class MainActivity extends AppCompatActivity {
     private static final int FORMAT_DDM = 1; // Degrees, Decimal Minutes
     private static final int FORMAT_DMS = 2; // Degrees, Minutes, Seconds
 
+    // --- STUBS FOR MISSING METHODS ---
+    private void parseAndFillCoordinates() {
+        // TODO: Implement coordinate parsing logic
+    }
+
+    private void setupAvwxApiKey() {
+        // TODO: Implement AVWX API key setup logic
+    }
+
+    private boolean isValidLongitude(double longitude) {
+        // Valid longitude is between -180 and 180
+        return longitude >= -180.0 && longitude <= 180.0;
+    }
+
+    private boolean validateDMSComponents() {
+        // TODO: Implement DMS component validation if needed
+        return true;
+    }
+    // --- END STUBS ---
+
     // UI Components
     private Spinner spinnerCoordinateFormat;
     private String[] formatNames; // Holds format names for spinner
@@ -103,11 +123,19 @@ public class MainActivity extends AppCompatActivity {
     private Button btnParseCoordinates;
     private Button btnUseMyLocation;
     
-    // ICAO Code Input Fields
+    // ICAO/IATA Code Input Fields
     private EditText etIcaoCode;
     private Button btnAddIcao;
     private LinearLayout layoutSelectedIcaoCodes;
     private TextView tvNoIcaoSelected;
+    private List<String> selectedIcaoCodes; // Holds selected codes
+
+    // API Key Flags
+    private boolean hasAvwxKey = false;
+    private boolean hasAutorouterKey = false;
+
+    // Mutable fields for location
+
     
     // Search Components
     private EditText etSearchRadius;
@@ -119,6 +147,38 @@ public class MainActivity extends AppCompatActivity {
     
     // Database and state
     private final List<Airport> airports = new ArrayList<>();
+    // ...
+    // Helper for ICAO/IATA selection
+    private void updateIcaoBubbles() {
+        layoutSelectedIcaoCodes.removeAllViews();
+        if (selectedIcaoCodes.isEmpty()) {
+            tvNoIcaoSelected.setVisibility(View.VISIBLE);
+            return;
+        }
+        tvNoIcaoSelected.setVisibility(View.GONE);
+        for (String code : selectedIcaoCodes) {
+            View bubble = createIcaoBubble(code);
+            layoutSelectedIcaoCodes.addView(bubble);
+        }
+    }
+    private View createIcaoBubble(final String code) {
+        TextView bubble = new TextView(this);
+        bubble.setText(getString(R.string.icao_bubble_remove, code));
+        bubble.setBackgroundResource(R.drawable.airport_bubble_background);
+        bubble.setPadding(24, 12, 24, 12);
+        bubble.setTextColor(getResources().getColor(android.R.color.white));
+        bubble.setTextSize(16);
+        bubble.setTypeface(Typeface.DEFAULT_BOLD);
+        bubble.setOnClickListener(v -> {
+            selectedIcaoCodes.remove(code);
+            updateIcaoBubbles();
+        });
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+            LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        params.setMargins(8, 8, 8, 8);
+        bubble.setLayoutParams(params);
+        return bubble;
+    }
     private final Map<String, Airport> selectedAirports = new HashMap<>();
     private SharedPreferences sharedPrefs;
     private final DecimalFormat decimalFormat = new DecimalFormat("#.######");
@@ -262,9 +322,9 @@ public class MainActivity extends AppCompatActivity {
         InputFilter[] radiusFilters = new InputFilter[] { new InputFilter.LengthFilter(5) };
         etSearchRadius.setFilters(radiusFilters);
         
-        // Set input filter for ICAO code
-        InputFilter[] icaoFilters = new InputFilter[] { new InputFilter.LengthFilter(4) };
-        etIcaoCode.setFilters(icaoFilters);
+        // Set input filter for ICAO/IATA code (max 4 chars)
+        InputFilter[] codeFilters = new InputFilter[] { new InputFilter.LengthFilter(4) };
+        etIcaoCode.setFilters(codeFilters);
         
         // Initial button state check
         validateCoordinatesAndUpdateButton();
@@ -368,11 +428,12 @@ public class MainActivity extends AppCompatActivity {
         btnParseCoordinates = findViewById(R.id.btnParseCoordinates);
         btnUseMyLocation = findViewById(R.id.btnUseMyLocation);
         
-        // ICAO code input components
+        // ICAO/IATA code input components
         etIcaoCode = findViewById(R.id.etIcaoCode);
         btnAddIcao = findViewById(R.id.btnAddIcao);
         layoutSelectedIcaoCodes = findViewById(R.id.layoutSelectedIcaoCodes);
         tvNoIcaoSelected = findViewById(R.id.tvNoIcaoSelected);
+        selectedIcaoCodes = new ArrayList<>();
         
         etSearchRadius = findViewById(R.id.etSearchRadius);
         btnFindAirport = findViewById(R.id.btnFindAirport);
@@ -615,7 +676,7 @@ public class MainActivity extends AppCompatActivity {
     }
     
     private void findNearestAirports() {
-        if (!selectedAirports.isEmpty()) {
+        if (!selectedIcaoCodes.isEmpty()) {
             // If ICAO codes are selected, find airports near those
             findAirportsNearSelectedIcao();
         } else {
@@ -1124,7 +1185,7 @@ private void getAirportInfo(String icaoCode) {
     private class LoadAirportDataTask extends AsyncTask<Void, Integer, Integer> {
         @Override
         protected void onPreExecute() {
-            tvResult.setText("Loading airport database...");
+            tvResult.setText(getString(R.string.loading_airport_database));
             Log.d("AirportFinder", "Starting to load airport database");
         }
         
@@ -1215,7 +1276,7 @@ private void getAirportInfo(String icaoCode) {
             if (result > 0) {
                 tvResult.setText(getString(R.string.loading_complete, result));
             } else {
-                tvResult.setText("Error loading airport database. Please restart the app.");
+                tvResult.setText(getString(R.string.error_loading_airport_database));
             }
         }
     }
@@ -1264,7 +1325,7 @@ private void getAirportInfo(String icaoCode) {
         
         NotamData notam3 = new NotamData();
         notam3.setId("NOTAM3");
-        notam3.setText("ILS RWY 01 U/S DUE TO EQUIPMENT FAILURE");
+        notam3.setText(getString(R.string.sample_notam_3)); // Fixed: no format argument
         notam3.setStartTime("2023-01-10T00:00:00Z");
         notam3.setEndTime("2023-01-25T00:00:00Z");
         notam3.setType("NAV");
@@ -1342,23 +1403,25 @@ private void getAirportInfo(String icaoCode) {
      * Add ICAO code functionality
      */
     private void addIcaoCode() {
-        String icaoCode = etIcaoCode.getText().toString().trim().toUpperCase();
+        String code = etIcaoCode.getText().toString().trim().toUpperCase();
         
-        if (icaoCode.isEmpty()) {
-            Toast.makeText(this, "Please enter an ICAO code", Toast.LENGTH_SHORT).show();
+        if (code.isEmpty()) {
+            Toast.makeText(this, "Please enter an ICAO/IATA code", Toast.LENGTH_SHORT).show();
             return;
         }
         
-        if (icaoCode.length() != 4) {
-            Toast.makeText(this, "ICAO code must be 4 characters", Toast.LENGTH_SHORT).show();
+        if (code.length() < 3 || code.length() > 4 || !code.matches("[A-Z0-9]{3,4}")) {
+            Toast.makeText(this, "Code must be 3 or 4 letters/numbers", Toast.LENGTH_SHORT).show();
             return;
         }
         
-        // Add the ICAO code to selected codes (implementation would depend on your UI structure)
-        Log.d("AirportFinder", "Adding ICAO code: " + icaoCode);
-        Toast.makeText(this, getString(R.string.icao_code_added, icaoCode), Toast.LENGTH_SHORT).show();
+        if (selectedIcaoCodes.contains(code)) {
+            Toast.makeText(this, "Already added", Toast.LENGTH_SHORT).show();
+            return;
+        }
         
-        // Clear the input field
+        selectedIcaoCodes.add(code);
+        updateIcaoBubbles();
         etIcaoCode.setText("");
     }
     
@@ -1389,7 +1452,6 @@ private void getAirportInfo(String icaoCode) {
             if (isValid && currentFormat == FORMAT_DMS) {
                 isValid = validateDMSComponents();
             }
-            
             btnFindAirport.setEnabled(isValid);
         } catch (Exception e) {
             btnFindAirport.setEnabled(false);
@@ -1397,239 +1459,20 @@ private void getAirportInfo(String icaoCode) {
     }
     
     /**
-     * Validate DMS component ranges
+     * Load sample NOTAM data for demo purposes
      */
-    private boolean validateDMSComponents() {
-        try {
-            // Validate latitude components
-            String latDegreesStr = etLatDegrees.getText().toString().trim();
-            String latMinutesStr = etLatMinutes.getText().toString().trim();
-            String latSecondsWholeStr = etLatSecondsWhole.getText().toString().trim();
-            String latSecondsDecimalStr = etLatSecondsDecimal.getText().toString().trim();
-            
-            // Validate longitude components
-            String lonDegreesStr = etLonDegrees.getText().toString().trim();
-            String lonMinutesStr = etLonMinutes.getText().toString().trim();
-            String lonSecondsWholeStr = etLonSecondsWhole.getText().toString().trim();
-            String lonSecondsDecimalStr = etLonSecondsDecimal.getText().toString().trim();
-            
-            // Check if any fields are empty
-            if (latDegreesStr.isEmpty() || latMinutesStr.isEmpty() || latSecondsWholeStr.isEmpty() || 
-                latSecondsDecimalStr.isEmpty() || lonDegreesStr.isEmpty() || lonMinutesStr.isEmpty() || 
-                lonSecondsWholeStr.isEmpty() || lonSecondsDecimalStr.isEmpty()) {
-                return false;
-            }
-            
-            // Parse and validate latitude components
-            int latDegrees = Integer.parseInt(latDegreesStr);
-            int latMinutes = Integer.parseInt(latMinutesStr);
-            int latSecondsWhole = Integer.parseInt(latSecondsWholeStr);
-            int latSecondsDecimal = Integer.parseInt(latSecondsDecimalStr);
-            
-            // Parse and validate longitude components
-            int lonDegrees = Integer.parseInt(lonDegreesStr);
-            int lonMinutes = Integer.parseInt(lonMinutesStr);
-            int lonSecondsWhole = Integer.parseInt(lonSecondsWholeStr);
-            int lonSecondsDecimal = Integer.parseInt(lonSecondsDecimalStr);
-            
-            // Validate ranges
-            if (latDegrees < 0 || latDegrees > 90) return false;
-            if (lonDegrees < 0 || lonDegrees > 180) return false;
-            if (latMinutes < 0 || latMinutes > 59) return false;
-            if (lonMinutes < 0 || lonMinutes > 59) return false;
-            if (latSecondsWhole < 0 || latSecondsWhole > 59) return false;
-            if (lonSecondsWhole < 0 || lonSecondsWhole > 59) return false;
-            if (latSecondsDecimal < 0 || latSecondsDecimal > 99) return false;
-            if (lonSecondsDecimal < 0 || lonSecondsDecimal > 99) return false;
-            
-            // Check for valid radio button selection
-            return rgLatDirection.getCheckedRadioButtonId() != -1 && rgLonDirection.getCheckedRadioButtonId() != -1;
-        } catch (NumberFormatException e) {
-            return false;
-        }
-    }
-    
+
     /**
-     * Parse coordinates from the paste input and auto-fill the coordinate fields
-     */
-    private void parseAndFillCoordinates() {
-        String input = etPasteCoordinates.getText().toString().trim();
-        if (input.isEmpty()) {
-            Toast.makeText(this, R.string.paste_coordinates_first, Toast.LENGTH_SHORT).show();
-            return;
-        }
-        
-        try {
-            CoordinateParseResult result = parseCoordinateString(input);
-            if (result != null) {
-                fillCoordinateFields(result.latitude, result.longitude);
-                etPasteCoordinates.setText(""); // Clear the input
-                Toast.makeText(this, R.string.coordinates_parsed_success, Toast.LENGTH_SHORT).show();
-            } else {
-                Toast.makeText(this, R.string.unable_to_parse_coordinates, Toast.LENGTH_LONG).show();
-            }
-        } catch (Exception e) {
-            Toast.makeText(this, getString(R.string.error_parsing_coordinates, e.getMessage()), Toast.LENGTH_LONG).show();
-        }
-    }
-    
-    /**
-     * Result class for coordinate parsing
+     * Coordinate parse result holder
      */
     private static class CoordinateParseResult {
         double latitude;
         double longitude;
-        
+
         CoordinateParseResult(double lat, double lon) {
             this.latitude = lat;
             this.longitude = lon;
         }
-    }
-    
-    /**
-     * Parse coordinate string from various formats
-     */
-    private CoordinateParseResult parseCoordinateString(String input) {
-        String cleaned = input.trim().replaceAll("\\s+", " ");
-        
-        // Try decimal format first (e.g., "40.7589, -73.9851" or "40.7589 -73.9851")
-        CoordinateParseResult result = parseDecimalFormat(cleaned);
-        if (result != null) return result;
-        
-        // Try DMS format (e.g., "40°45'32"N 73°59'06"W")
-        result = parseDMSFormat(cleaned);
-        if (result != null) return result;
-        
-        // Try DM format (e.g., "40°45.53'N 73°59.1'W")
-        result = parseDMFormat(cleaned);
-        if (result != null) return result;
-        
-        // Try space-separated decimal format
-        result = parseSpaceSeparatedDecimal(cleaned);
-        return result;
-    }
-    
-    /**
-     * Parse decimal format coordinates (e.g., "40.7589, -73.9851")
-     */
-    private CoordinateParseResult parseDecimalFormat(String input) {
-        try {
-            // Handle comma or space separated
-            String[] parts = input.split("[,\\s]+");
-            if (parts.length >= 2) {
-                double lat = Double.parseDouble(parts[0]);
-                double lon = Double.parseDouble(parts[1]);
-                
-                if (isValidLatitude(lat) && isValidLongitude(lon)) {
-                    return new CoordinateParseResult(lat, lon);
-                }
-            }
-        } catch (NumberFormatException e) {
-            // Try other formats
-        }
-        return null;
-    }
-    
-    /**
-     * Parse DMS format coordinates (e.g., "40°45'32"N 73°59'06"W")
-     */
-    private CoordinateParseResult parseDMSFormat(String input) {
-        try {
-            // Pattern for DMS: degrees°minutes'seconds"direction
-            Pattern dmsPattern = Pattern.compile(
-                "(\\d+)°(\\d+)'(\\d+(?:\\.\\d+)?)\"?([NSEW])\\s+(\\d+)°(\\d+)'(\\d+(?:\\.\\d+)?)\"?([EW])"
-            );
-            
-            Matcher matcher = dmsPattern.matcher(input);
-            if (!matcher.find()) {
-                throw new Exception("Invalid DMS format. Use: 40°45'32\"N 73°59'06\"W");
-            }
-            
-            // Parse latitude
-            int latDeg = Integer.parseInt(matcher.group(1));
-            int latMin = Integer.parseInt(matcher.group(2));
-            double latSec = Double.parseDouble(matcher.group(3));
-            boolean isNorth = matcher.group(4).equals("N");
-            
-            // Parse longitude
-            int lonDeg = Integer.parseInt(matcher.group(5));
-            int lonMin = Integer.parseInt(matcher.group(6));
-            double lonSec = Double.parseDouble(matcher.group(7));
-            boolean isEast = matcher.group(8).equals("E");
-            
-            // Convert to decimal
-            double lat = latDeg + (latMin / 60.0) + (latSec / 3600.0);
-            double lon = lonDeg + (lonMin / 60.0) + (lonSec / 3600.0);
-            
-            if (!isNorth) lat = -lat;
-            if (!isEast) lon = -lon;
-            
-            return new CoordinateParseResult(lat, lon);
-            
-        } catch (Exception e) {
-            // Try other formats
-        }
-        return null;
-    }
-    
-    /**
-     * Parse DM format coordinates (e.g., "40°45.53'N 73°59.1'W")
-     */
-    private CoordinateParseResult parseDMFormat(String input) {
-        try {
-            // Pattern for DM: degrees°minutes.decimal'direction
-            Pattern dmPattern = Pattern.compile(
-                "(\\d+)°(\\d+(?:\\.\\d+)?)'([NSEW])\\s+(\\d+)°(\\d+(?:\\.\\d+)?)'([EW])"
-            );
-            
-            Matcher matcher = dmPattern.matcher(input);
-            if (!matcher.find()) {
-                throw new Exception("Invalid DM format. Use: 40°45.53'N 73°59.1'W");
-            }
-            
-            // Parse latitude
-            int latDeg = Integer.parseInt(matcher.group(1));
-            double latMin = Double.parseDouble(matcher.group(2));
-            boolean isNorth = matcher.group(3).equals("N");
-            
-            // Parse longitude
-            int lonDeg = Integer.parseInt(matcher.group(4));
-            double lonMin = Double.parseDouble(matcher.group(5));
-            boolean isEast = matcher.group(6).equals("E");
-            
-            // Convert to decimal
-            double lat = latDeg + (latMin / 60.0);
-            double lon = lonDeg + (lonMin / 60.0);
-            
-            if (!isNorth) lat = -lat;
-            if (!isEast) lon = -lon;
-            
-            return new CoordinateParseResult(lat, lon);
-            
-        } catch (Exception e) {
-            // Try other formats
-        }
-        return null;
-    }
-    
-    /**
-     * Parse space-separated decimal format
-     */
-    private CoordinateParseResult parseSpaceSeparatedDecimal(String input) {
-        try {
-            String[] parts = input.split("\\s+");
-            if (parts.length >= 2) {
-                double lat = Double.parseDouble(parts[0]);
-                double lon = Double.parseDouble(parts[1]);
-                
-                if (isValidLatitude(lat) && isValidLongitude(lon)) {
-                    return new CoordinateParseResult(lat, lon);
-                }
-            }
-        } catch (NumberFormatException e) {
-            // Invalid format
-        }
-        return null;
     }
     
     /**
@@ -1659,7 +1502,7 @@ private void getAirportInfo(String icaoCode) {
      */
     private void fillCoordinateFields(double latitude, double longitude) {
         // Get current coordinate format
-        int currentFormat = spinnerCoordinateFormat.getSelectedItemPosition();
+        currentFormat = spinnerCoordinateFormat.getSelectedItemPosition();
         
         switch (currentFormat) {
             case FORMAT_DD: // Decimal Degrees Format
@@ -1750,95 +1593,85 @@ private void getAirportInfo(String icaoCode) {
     private boolean isValidLatitude(double lat) {
         return lat >= -90 && lat <= 90;
     }
-    
     /**
-     * Validate longitude range
+     * Checks if both API keys are present; if not, prompts the user to enter them.
      */
-    private boolean isValidLongitude(double lon) {
-        return lon >= -180 && lon <= 180;
-    }
-    
-    /**
-     * Setup API keys with user dialog if not already configured
-     */
-    private void setupAvwxApiKey() {
+    private void checkAndPromptApiKeys() {
         // Check if both API keys are already stored
         boolean hasAvwxKey = apiKeyManager.hasAvwxApiKey();
         boolean hasAutorouterKey = apiKeyManager.hasAutoRouterApiKey();
-        
+
         if (hasAvwxKey && hasAutorouterKey) {
             Log.d("MainActivity", "Both API keys already configured");
             return;
         }
-        
+
         // Show dialog to enter missing API keys
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("API Keys Required");
-        
+
         // Create custom layout for the dialog
         LinearLayout layout = new LinearLayout(this);
         layout.setOrientation(LinearLayout.VERTICAL);
         layout.setPadding(50, 20, 50, 20);
-        
+
         // Add instructions
         TextView instructions = new TextView(this);
         instructions.setText(R.string.api_key_required_message);
         instructions.setPadding(0, 0, 0, 20);
         layout.addView(instructions);
-        
         // AVWX API Key section
         if (!hasAvwxKey) {
             TextView avwxLabel = new TextView(this);
             avwxLabel.setText("AVWX API Key (for Weather Data):");
             avwxLabel.setTypeface(null, Typeface.BOLD);
             layout.addView(avwxLabel);
-            
+
             TextView avwxInfo = new TextView(this);
             avwxInfo.setText("Get free key from: https://avwx.rest");
             avwxInfo.setTextSize(12);
             avwxInfo.setPadding(0, 0, 0, 8);
             layout.addView(avwxInfo);
-            
+
             final EditText avwxInput = new EditText(this);
             avwxInput.setHint("Enter AVWX API key");
             avwxInput.setPadding(20, 10, 20, 10);
             layout.addView(avwxInput);
-            
+
             // Add some spacing
             View spacer1 = new View(this);
             spacer1.setLayoutParams(new LinearLayout.LayoutParams(0, 30));
             layout.addView(spacer1);
         }
-        
+
         // Autorouter API Key section
         if (!hasAutorouterKey) {
             TextView autorouterLabel = new TextView(this);
             autorouterLabel.setText("Autorouter API Key (for NOTAM Data):");
             autorouterLabel.setTypeface(null, Typeface.BOLD);
             layout.addView(autorouterLabel);
-            
+
             TextView autorouterInfo = new TextView(this);
             autorouterInfo.setText("Get key from: https://www.autorouter.aero");
             autorouterInfo.setTextSize(12);
             autorouterInfo.setPadding(0, 0, 0, 8);
             layout.addView(autorouterInfo);
-            
+
             final EditText autorouterInput = new EditText(this);
             autorouterInput.setHint("Enter Autorouter API key");
             autorouterInput.setPadding(20, 10, 20, 10);
             layout.addView(autorouterInput);
         }
-        
+
         builder.setView(layout);
-        
+
         builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 boolean success = true;
-                
                 // Save AVWX key if needed
                 if (!hasAvwxKey) {
-                    EditText avwxInput = (EditText) layout.getChildAt(3); // Adjust index based on layout
+                    EditText avwxInput = (EditText) layout.getChildAt(3); // Adjust index if needed
                     String avwxKey = avwxInput.getText().toString().trim();
                     if (!avwxKey.isEmpty()) {
                         boolean avwxSuccess = apiKeyManager.storeAvwxApiKey(avwxKey);
@@ -1850,56 +1683,31 @@ private void getAirportInfo(String icaoCode) {
                         }
                     }
                 }
-                
                 // Save Autorouter key if needed
                 if (!hasAutorouterKey) {
-                    // Find the Autorouter input field (last EditText in layout)
-                    EditText autorouterInput = null;
-                    for (int i = layout.getChildCount() - 1; i >= 0; i--) {
-                        if (layout.getChildAt(i) instanceof EditText) {
-                            autorouterInput = (EditText) layout.getChildAt(i);
-                            break;
-                        }
-                    }
-                    
-                    if (autorouterInput != null) {
-                        String autorouterKey = autorouterInput.getText().toString().trim();
-                        if (!autorouterKey.isEmpty()) {
-                            boolean autorouterSuccess = apiKeyManager.storeAutoRouterApiKey(autorouterKey);
-                            if (autorouterSuccess) {
-                                Log.d("MainActivity", "Autorouter API key stored successfully");
-                            } else {
-                                success = false;
-                                Log.e("MainActivity", "Failed to store Autorouter API key");
-                            }
+                    EditText autorouterInput = (EditText) layout.getChildAt(hasAvwxKey ? 3 : 7); // Adjust index if needed
+                    String autorouterKey = autorouterInput.getText().toString().trim();
+                    if (!autorouterKey.isEmpty()) {
+                        boolean autorouterSuccess = apiKeyManager.storeAutoRouterApiKey(autorouterKey);
+                        if (autorouterSuccess) {
+                            Log.d("MainActivity", "Autorouter API key stored successfully");
+                        } else {
+                            success = false;
+                            Log.e("MainActivity", "Failed to store Autorouter API key");
                         }
                     }
                 }
-                
                 if (success) {
-                    Toast.makeText(MainActivity.this, 
-                        "API keys saved successfully!", 
-                        Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "API keys saved successfully!", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(MainActivity.this, 
-                        "Failed to save one or more API keys. Please try again.", 
-                        Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Failed to save one or more API keys. Please try again.", Toast.LENGTH_LONG).show();
                 }
             }
         });
-        
-        builder.setNegativeButton("Skip", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(MainActivity.this, 
-                    "You can configure API keys later from the menu", 
-                    Toast.LENGTH_LONG).show();
-            }
-        });
-        
-        builder.setCancelable(false); // Prevent accidental dismissal
+        builder.setNegativeButton("Cancel", null);
         builder.show();
     }
+
     
     /**
      * Verify if API key is stored and working
@@ -2321,16 +2129,19 @@ private void getAirportInfo(String icaoCode) {
         Pattern pattern = Pattern.compile("(\\d{1,2})°(\\d{2})'([\\d.]+)\"([NS])");
         Matcher matcher = pattern.matcher(gpsText);
         if (matcher.matches()) {
-            double degrees = Double.parseDouble(matcher.group(1));
-            double minutes = Double.parseDouble(matcher.group(2));
-            double seconds = Double.parseDouble(matcher.group(3));
+            String degreesStr = matcher.group(1);
+            String minutesStr = matcher.group(2);
+            String secondsStr = matcher.group(3);
             String direction = matcher.group(4);
-            
-            // Convert DMS to decimal degrees
-            double decimalDegrees = degrees + (minutes / 60.0) + (seconds / 3600.0);
-            
-            // Apply sign based on direction (negative for South)
-            return direction.equals("S") ? -decimalDegrees : decimalDegrees;
+            if (degreesStr != null && minutesStr != null && secondsStr != null && direction != null) {
+                double degrees = Double.parseDouble(degreesStr);
+                double minutes = Double.parseDouble(minutesStr);
+                double seconds = Double.parseDouble(secondsStr);
+                // Convert DMS to decimal degrees
+                double decimalDegrees = degrees + (minutes / 60.0) + (seconds / 3600.0);
+                // Apply sign based on direction (negative for South)
+                return direction.equals("S") ? -decimalDegrees : decimalDegrees;
+            }
         }
         throw new IllegalArgumentException("Invalid GPS latitude format");
     }

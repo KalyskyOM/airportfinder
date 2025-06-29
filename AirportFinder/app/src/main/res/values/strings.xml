@@ -60,7 +60,25 @@
     <string name="no_airports_found_format">No airports found within %1$d NM of the specified coordinates.</string>
     <string name="error_loading_notams">Error loading NOTAMs: %1$s</string>
     <string name="error_loading_weather">Error loading weather data: %1$s</string>
-    <string name="api_keys_saved">API keys saved successfully!</string>
+    <!-- Removed: <string name="api_keys_saved">API keys saved successfully!</string> (unused) -->
+    <!-- Added new string resources for hardcoded strings in MainActivity.java -->
+    <string name="loading_airport_database">Loading airport database...</string>
+    <string name="no_notams_available">No NOTAMs available</string>
+    <string name="error_loading_airport_database">Error loading airport database. Please restart the app.</string>
+    <string name="avwx_api_key_label">AVWX API Key (for Weather Data):</string>
+    <string name="autorouter_api_key_label">Autorouter API Key (for NOTAM Data):</string>
+    <string name="get_key_autorouter">Get key from: https://www.autorouter.aero</string>
+    <string name="get_free_key_avwx">Get free key from: https://avwx.rest</string>
+    <string name="icao_bubble_remove">%1$s ✕</string>
+    <string name="direction_north">N</string>
+    <string name="direction_south">S</string>
+    <string name="direction_east">E</string>
+    <string name="direction_west">W</string>
+    <string name="sample_notam_1">RWY 01/19 CLOSED DUE TO MAINTENANCE</string>
+    <string name="sample_notam_2">TWR FREQUENCY CHANGE TO 119.2 MHz</string>
+    <string name="sample_notam_3">ILS RWY 01 U/S DUE TO EQUIPMENT FAILURE</string>
+    <string name="sample_notam_construction">%1$s RWY 18/36 CLSD DUE TO CONSTRUCTION WEF 2023-01-01 UNTIL 2023-02-01</string>
+    <string name="sample_notam_maintenance">%1$s TWY A CLSD DUE TO MAINTENANCE WEF 2023-01-15 UNTIL 2023-01-20</string>
 
     <!-- Menu Items -->
 
@@ -73,9 +91,9 @@
     <string name="second_label">″</string>
 
     <string name="refresh_notam">Refresh NOTAMs</string>
-    <string name="cancel">Cancel</string>
+    <!-- Removed: <string name="cancel">Cancel</string> (unused) -->
     <string name="connect">Connect</string>
-    <string name="close">Close</string>
+    <!-- Removed: <string name="close">Close</string> (unused) -->
 
     <!-- Coordinate Format Labels -->
     <string name="gps_coordinates_hint"></string>
@@ -100,7 +118,6 @@
     <string name="refresh_metar">Refresh METAR</string>
     <string name="taf_title">TAF</string>
     <string name="loading_taf">Loading TAF...</string>
-    <string name="no_notams_available">No NOTAMs available</string>
     <string name="sample_notam_id">A1234/23</string>
     <string name="sample_notam_type">OBST</string>
     <string name="sample_notam_text">CRANE ERECTED 1NM NORTH OF RWY 27, HEIGHT 150FT AGL</string>
@@ -110,7 +127,7 @@
     <string name="track_format">Trk: %1$d°</string>
     <string name="loading_airports_progress">Loading airports... %1$d</string>
     <string name="loading_complete">Loading complete. Found %1$d airports.</string>
-    <string name="icao_code_added">Added airport %1$s</string>
+    <!-- Removed: <string name="icao_code_added">Added airport %1$s</string> (unused) -->
     <string name="no_metar_data">No METAR data available</string>
     <string name="no_taf_data">No TAF data available</string>
     <string name="api_key_required">API key is required</string>
@@ -147,19 +164,19 @@
     <string name="taf_decoded_clouds_clear">Clouds: Clear</string>
 
     <!-- Dropbox Setup Modal -->
-    <string name="dropbox_access_token_hint">Dropbox Access Token</string>
-    <string name="dropbox_cancel">Cancel</string>
+    <!-- Removed: <string name="dropbox_access_token_hint">Dropbox Access Token</string> (unused) -->
+    <!-- Removed: <string name="dropbox_cancel">Cancel</string> (unused) -->
     <string name="dropbox_connect">Connect</string>
 
     <!-- Dialog Titles -->
     <string name="dropbox_integration">Dropbox Integration</string>
-    <string name="dropbox_description">Connect your Dropbox account to save airport reports directly to your cloud storage.</string>
-    <string name="dropbox_token_hint">Dropbox Access Token</string>
+    <!-- Removed: <string name="dropbox_description">Connect your Dropbox account to save airport reports directly to your cloud storage.</string> (unused) -->
+    <!-- Removed: <string name="dropbox_token_hint">Dropbox Access Token</string> (unused) -->
 
     <!-- Coordinate Format Names -->
-    <string name="format_dms">DMS (Degrees, Minutes, Seconds)</string>
-    <string name="format_decimal">Decimal Degrees</string>
-    <string name="format_gps">GPS Coordinates</string>
+    <!-- Removed: <string name="format_dms">DMS (Degrees, Minutes, Seconds)</string> (unused) -->
+    <!-- Removed: <string name="format_decimal">Decimal Degrees</string> (unused) -->
+    <!-- Removed: <string name="format_gps">GPS Coordinates</string> (unused) -->
 
     <!-- Toast Messages -->
     <string name="error_invalid_coordinates">Please enter valid coordinates</string>
@@ -170,7 +187,7 @@
     <string name="airport_saved_to_dropbox">Airport %1$s saved to Dropbox</string>
     <string name="no_airport_data">No airport data to save</string>
     <string name="error_parsing_coordinates">Error parsing coordinates: %1$s</string>
-    <string name="coordinates_parsed_success">Coordinates parsed successfully!</string>
+    <!-- Removed: <string name="coordinates_parsed_success">Coordinates parsed successfully!</string> (unused) -->
     <string name="paste_coordinates_first">Please paste coordinates first</string>
     <string name="unable_to_parse_coordinates">Unable to parse coordinates. Please check the format.</string>
     <string name="error_getting_location">Error getting location: %1$s</string>
@@ -204,8 +221,12 @@
     <string name="metar_title">METAR</string>
     <string name="loading_metar">Loading METAR...</string>
     <string name="notams_title">NOTAMs</string>
-    <string name="refresh_notams">Refresh NOTAMs</string>
+    <!-- Removed: <string name="refresh_notams">Refresh NOTAMs</string> (unused) -->
     <string name="generate_pdf">Generate PDF</string>
+    <string name="refresh_notams">Refresh NOTAMs</string>
+    <string name="dropbox_description">Connect your Dropbox account to save airport reports directly to your cloud storage.</string>
+    <string name="dropbox_access_token_hint">Dropbox Access Token</string>
+    <string name="dropbox_cancel">Cancel</string>
     <string name="save_to_dropbox">Save to Dropbox</string>
     <string name="sample_metar_raw_format">%1$s %2$sZ AUTO 12010KT 10SM CLR 25/15 A3001 RMK AO2</string>
     <string name="sample_metar_decoded">Automated observation, wind from 120° at 10 knots, visibility 10 statute miles, sky clear, temperature 25°C, dew point 15°C, altimeter 30.01 inHg</string>

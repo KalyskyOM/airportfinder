@@ -316,7 +316,11 @@ public class AvwxApiService {
                         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
                         sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
                         Date date = sdf.parse(timestamp);
-                        weatherData.setTimestamp(date.getTime());
+                        if (date != null) {
+                            weatherData.setTimestamp(date.getTime());
+                        } else {
+                            weatherData.setTimestamp(System.currentTimeMillis());
+                        }
                     } catch (ParseException e) {
                         // If parsing fails, use current time
                         Log.e(TAG, "Error parsing timestamp: " + timestamp, e);
